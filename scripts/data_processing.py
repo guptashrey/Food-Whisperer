@@ -3,6 +3,7 @@ import os
 import polars as pl
 import pandas as pd
 from sklearn.preprocessing import MultiLabelBinarizer
+from sklearn.preprocessing import StandardScaler
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -95,10 +96,15 @@ def process_recipes(recipes_df):
     mlb = MultiLabelBinarizer()
 
     # Expand the nutrition column into 7 columns
-    new_columns = ['calories', 'fat_amount', 'sodium_amount', 'protein_amount', 'sugar_amount', 'saturated_fat', 'carbohydrates']
+    nutrition_columns = ['calories', 'fat_amount', 'sodium_amount', 'protein_amount', 'sugar_amount', 'saturated_fat', 'carbohydrates']
     recipes_df_processed['nutrition'] = recipes_df_processed['nutrition'].str.replace('[', '').str.replace(']', '')
-    recipes_df_processed[new_columns] = recipes_df_processed['nutrition'].str.split(',', expand=True).astype(float)
+    recipes_df_processed[nutrition_columns] = recipes_df_processed['nutrition'].str.split(',', expand=True).astype(float)
     recipes_df_processed = recipes_df_processed.drop(columns=['nutrition'])
+
+    # Normalize the columns that aren't onehot encoded
+    scaler = StandardScaler()
+    columns_to_normalize = ['minutes', 'n_steps'] + nutrition_columns
+    recipes_df_processed[columns_to_normalize] = scaler.fit_transform(recipes_df_processed[columns_to_normalize])
 
     # Explode the tags column and one hot encode them
     recipes_df_processed["tags"] = recipes_df_processed["tags"].apply(lambda x: x.replace("[", "").replace("]", "").replace("'", "").split(","))
@@ -123,11 +129,10 @@ def _onehot_encode_ingredients(df, mlb, keep_top_n=20):
     Returns:
         pd.DataFrame: The recipes dataframe with the ingredients column one-hot encoded.
     """
-    df_processed = df.copy()
-    columns_minus_ingredients = list(df_processed.columns.drop('ingredients'))
+    columns_minus_ingredients = list(df.columns.drop('ingredients'))
 
     # Get the top n ingredients
-    df_processed = df_processed.explode(column='ingredients')
+    df_processed = df.explode(column='ingredients')
     df_processed['ingredients'] = df_processed['ingredients'].str.strip()
     ingredient_counts = df_processed['ingredients'].value_counts()
     top_n = ingredient_counts.iloc[:keep_top_n]
@@ -161,12 +166,10 @@ def _onehot_encode_cuisines(df, mlb):
     Returns:
         pd.DataFrame: The recipes dataframe with one-hot encoded cuisine data.
     """
-    CUISINES = {'italian', 'chinese', 'indian', 'thai', 'american', 'greek', 'spanish', 'german', 'french', 'japanese', 'lebanese', 'korean', 'australian', 'caribbean', 'filipino', 'scottish', 'mexican', 'indonesian', 'brazilian', 'south-african'}
-    df_processed = df.copy()
-    columns_minus_tags = list(df_processed.columns.drop('tags'))
+    columns_minus_tags = list(df.columns.drop('tags'))
     
     # Get all the tags
-    df_processed = df_processed.explode(column='tags')
+    df_processed = df.explode(column='tags')
     df_processed['tags'] = df_processed['tags'].str.strip()
     
     # Drop tags not in the cuisine types
@@ -214,8 +217,8 @@ if __name__ == "__main__":
     print("Processing recipes...")
     recipes_df_processed = process_recipes(recipes_df)
     recipes_df_processed.to_csv(os.path.join("..", "data", "processed", "processed_recipes.csv"), index=False)
-    
-    num_recipes=50
-    print(f"Getting top {num_recipes} recipes...")
-    top_recipes = _get_top_recipes(interactions_df, recipes_df, num_recipes=num_recipes)
-    top_recipes[['recipe_id', 'name']].to_csv(os.path.join("..", "data", "processed", "top_recipes.csv"), index=False)
+
+    #num_recipes=50
+    #print(f"Getting top {num_recipes} recipes...")
+    #top_recipes = _get_top_recipes(interactions_df, recipes_df, num_recipes=num_recipes)
+    #top_recipes[['recipe_id', 'name']].to_csv(os.path.join("..", "data", "processed", "top_recipes.csv"), index=False)
