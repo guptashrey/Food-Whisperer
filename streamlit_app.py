@@ -22,8 +22,8 @@ def load_data():
         df (pd.DataFrame): The dataframe containing the top 50 popular recipes
     """
 
-    df = None
-    #df = pd.read_pickle("./data/cleaned_data.pkl")
+    df = pd.read_csv('data/top_recipes.csv')
+    df["selected"]=False
 
     return df
 

@@ -14,16 +14,6 @@ def user_profile_UI(df):
     """
     st.write("Select ingredients available at home to cook your meal today ... ")
 
-    # res = card(
-    # title="Streamlit Card",
-    # text="This is a test card",
-    # image="https://placekitten.com/500/500",
-    # #url="https://github.com/gamcoh/st-card",
-    # )
-
-    # st.write(res)
-
-
     # Define the recipe cards
     recipes = [
         {
@@ -95,19 +85,3 @@ def user_profile_UI(df):
             count += 1
             if count >= 6:
                 count = 0
-
-    # # Populate the first column with recipe cards
-    # with col1:
-    #     for recipe in recipes:
-    #         selected_1 = st.checkbox(recipe["title"])
-    #         #st.write(f"## {recipe['title']}")
-    #         st.image(recipe["image"], use_column_width=True)
-    #         st.write(recipe["description"])
-
-    # # Populate the second column with recipe cards and checkboxes
-    # with col2:
-    #     for recipe in recipes:
-    #         selected_2 = st.checkbox(recipe["title"])
-    #         st.write(f"## {recipe['title']}")
-    #         st.image(recipe["image"], use_column_width=True)
-    #         st.write(recipe["description"])
