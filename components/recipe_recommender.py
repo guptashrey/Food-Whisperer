@@ -1,14 +1,14 @@
 ## Library imports
 import streamlit as st
 import matplotlib.pyplot as plt
-
+from config import PAGES
 
 def recipe_recommender_UI(df):
     """
     The main UI function to display the Landing page UI
     """
-    st.write("Recipe Recommender")
-    st.write("Select a few Recipes you love ... ")
+    st.divider()
+    st.header('Select a few Recipes you love ... ')
 
     ## Get the top 30 recipes
     recipes = df.to_dict('records')
@@ -32,7 +32,31 @@ def recipe_recommender_UI(df):
             if count >= 6:
                 count = 0
 
+    ## Add css to the button
+    st.markdown("""
+                <style>
+                div.stButton > button:first-child {
+                    background-color: #0099ff;
+                    color:#ffffff;
+                }
+                div.stButton > button:hover {
+                    background-color: #03fc88;
+                    color:#ff0000;
+                    }
+                </style>""", unsafe_allow_html=True)
+    
+    col4, col5, col6 = st.columns([1, 1.5, 1])
+    with col5:
+        if st.button('Recommend Recipes', use_container_width=True):
+            ## Get the selected recipes
+            seleted_recipied = [recipe for recipe in recipes if recipe["selected"]]
 
-    if st.button('Recommend Recipes'):
-        print(recipes)
+            ## Save the selected recipes to the session state
+            st.session_state.toprecipies = seleted_recipied
+            
+            ## Move to recommended recipes page
+            st.session_state["page"] = 2
+            
+            ## Confirm the selection
+            st.button('Confirm', use_container_width=True)
         

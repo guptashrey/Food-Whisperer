@@ -1,6 +1,6 @@
 ## Page names for streamlit sidebar
 PAGES = [
-    'User Profile',
+    'About Us',
     'Recipe Recommender',
-    'About Us'
+    'Recommended Recipes',
 ]

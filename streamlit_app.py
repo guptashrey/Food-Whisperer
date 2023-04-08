@@ -7,10 +7,11 @@ from streamlit import runtime
 ## Local imports
 from components import user_profile
 from components import recipe_recommender
+from components import recommended_recipies
 from components import about_us
 from config import PAGES
 
-@st.cache
+@st.cache_data
 def load_data():
     """ 
     Loads the required dataframe into the webapp 
@@ -25,10 +26,12 @@ def load_data():
     df = pd.read_csv('data/top_recipes.csv')
     df["selected"]=False
 
+    st.session_state.toprecipies = df.to_dict('records')
+
     return df
 
 ## Set the page tab title
-st.set_page_config(page_title="Food Whisper", page_icon="🤖")
+st.set_page_config(page_title="Food Whisper", page_icon="🤖", layout="wide", initial_sidebar_state="collapsed")
 
 ## create dataframe from the load function 
 df = load_data()
@@ -70,6 +73,19 @@ def run_UI():
         """)
         st.title("Food Whisper")
         recipe_recommender.recipe_recommender_UI(df)
+    
+    elif page == 'Recommended Recipes':
+        st.sidebar.write("""
+            ## About
+            
+            The project aims to provide personalized recipe recommendations to users based on their preferences and available ingredients.
+            
+            Users will select their favorite recipes, and the system will use content-based filtering to suggest similar and popular recipes.
+            
+            The recommendations will also the user's available ingredients.
+        """)
+        st.title("Food Whisper")
+        recommended_recipies.recommended_recipes_UI()
 
     else:
         st.sidebar.write("""
@@ -91,15 +107,15 @@ if __name__ == '__main__':
 
         ## Get the page name from the URL
         url_params = st.experimental_get_query_params()
+        if len(url_params.keys()) == 0:
+            st.session_state.page = 1
 
         if 'loaded' not in st.session_state:
             if len(url_params.keys()) == 0:
                 ## Set the default page as "Animal Classifier"
-                st.experimental_set_query_params(page='User Profile')
+                st.experimental_set_query_params(page='Recipe Recommender')
                 url_params = st.experimental_get_query_params()
-                
-            ## Set the page index
-            st.session_state.page = PAGES.index(url_params['page'][0])
+                st.session_state.page = PAGES.index(url_params['page'][0])
         
         ## Call the main UI function
         run_UI()
