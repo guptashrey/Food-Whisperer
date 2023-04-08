@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 CUISINES = {'italian', 'chinese', 'indian', 'thai', 'american', 'greek', 'spanish', 'german', 'french', 'japanese', 'lebanese', 'korean', 'australian', 'caribbean', 'filipino', 'scottish', 'mexican', 'indonesian', 'brazilian', 'south-african'}
 
 ##### Loading Data Functions #####
-def load_processed_recipes(data_folder_path=os.path.join("data", "processed")):
+def load_processed_recipes_similarity(data_folder_path=os.path.join("data", "processed")):
     """Loads the processed recipes data from the processed data folder.
 
     Args:
@@ -21,7 +21,21 @@ def load_processed_recipes(data_folder_path=os.path.join("data", "processed")):
         pd.DataFrame: The processed recipes dataframe.
     """
     # Load the processed recipes
-    recipes_df_processed = pl.read_csv(os.path.join(data_folder_path, "processed_recipes.csv"))
+    recipes_df_processed = pl.read_csv(os.path.join(data_folder_path, "processed_recipes_for_similarity.csv"))
+    recipes_df_processed = recipes_df_processed.to_pandas()
+    return recipes_df_processed
+
+def load_processed_recipes_display(data_folder_path=os.path.join("data", "processed")):
+    """Loads the processed recipes data from the processed data folder.
+
+    Args:
+        data_folder_path (str, optional): Path to the data folder containing the processed recipes. Defaults to "data".
+
+    Returns:
+        pd.DataFrame: The processed recipes dataframe.
+    """
+    # Load the processed recipes
+    recipes_df_processed = pl.read_csv(os.path.join(data_folder_path, "processed_recipes_for_display.csv"))
     recipes_df_processed = recipes_df_processed.to_pandas()
     return recipes_df_processed
 
@@ -104,7 +118,7 @@ def process_recipes(recipes_df, processed_data_folder_path=os.path.join("data", 
         pd.DataFrame: The processed recipes dataframe.
     """
     # Get the appropriate columns from the recipes dataframe
-    recipes_df_processed = recipes_df[['id', 'minutes', 'tags', 'nutrition', 'n_steps', 'ingredients']]
+    recipes_df_processed = recipes_df[['name', 'id', 'minutes', 'tags', 'nutrition', 'n_steps', 'ingredients']]
     mlb = MultiLabelBinarizer()
 
     # Expand the nutrition column into 7 columns
@@ -112,6 +126,8 @@ def process_recipes(recipes_df, processed_data_folder_path=os.path.join("data", 
     recipes_df_processed['nutrition'] = recipes_df_processed['nutrition'].str.replace('[', '').str.replace(']', '')
     recipes_df_processed[nutrition_columns] = recipes_df_processed['nutrition'].str.split(',', expand=True).astype(float)
     recipes_df_processed = recipes_df_processed.drop(columns=['nutrition'])
+    print("Saving the results for display...")
+    recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes_for_display.csv"), index=False)
 
     # Normalize the columns that aren't onehot encoded
     scaler = StandardScaler()
@@ -129,8 +145,8 @@ def process_recipes(recipes_df, processed_data_folder_path=os.path.join("data", 
     recipes_df_processed = _onehot_encode_ingredients(recipes_df_processed, mlb, ingredient_mapping)
     
     # Save the results
-    print("Saving the results...")
-    recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes.csv"), index=False)
+    print("Saving the results for similarity calculation...")
+    recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes_for_similarity.csv"), index=False)
 
 
 ##### Helper Functions #####
