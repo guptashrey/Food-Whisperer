@@ -9,7 +9,6 @@ warnings.filterwarnings('ignore')
 
 ##### Constants #####
 CUISINES = {'italian', 'chinese', 'indian', 'thai', 'american', 'greek', 'spanish', 'german', 'french', 'japanese', 'lebanese', 'korean', 'australian', 'caribbean', 'filipino', 'scottish', 'mexican', 'indonesian', 'brazilian', 'south-african'}
-NUM_INGREDIENTS = 100
 
 ##### Loading Data Functions #####
 def load_processed_recipes(data_folder_path=os.path.join("data", "processed")):
@@ -77,9 +76,22 @@ def load_raw_recipes(data_folder_path="data"):
     # Return the dataframe
     return recipes_df
 
+def load_ingredient_mapping_dict(data_folder_path=os.path.join("data", "processed")):
+    """Loads the ingredient mapping from the data folder.
+
+    Args:
+        data_folder_path (str, optional): Path to the folder containing the data. Defaults to "data/processed".
+
+    Returns:
+        dict: The ingredient mapping.
+    """
+    # Load the ingredient mapping
+    ingredient_mapping = pd.read_csv(os.path.join(data_folder_path, "ingredient_mapping.csv")).set_index('ingredient').to_dict()['mapping']
+    return ingredient_mapping
+
 
 ##### Data Processing Functions #####
-def process_recipes(recipes_df):
+def process_recipes(recipes_df, processed_data_folder_path=os.path.join("data", "processed")):
     """Processes the recipe data with the following steps:
          - Expand the nutrition column into ['calories', 'fat_amount', 'sodium_amount', 'protein_amount', 'sugar_amount', 'saturated_fat', 'carbohydrates']
          - One-hot encode the tags related to the cuisine of the recipe
@@ -112,36 +124,45 @@ def process_recipes(recipes_df):
 
     # Explode the ingredients column and one hot encode them
     recipes_df_processed["ingredients"] = recipes_df_processed["ingredients"].apply(lambda x: x.replace("[", "").replace("]", "").replace("'", "").split(","))
-    recipes_df_processed = _onehot_encode_ingredients(recipes_df_processed, mlb, keep_top_n=NUM_INGREDIENTS)
+    ingredient_mapping = load_ingredient_mapping_dict(data_folder_path=processed_data_folder_path)
+    # One-hot encode the ingredients
+    recipes_df_processed = _onehot_encode_ingredients(recipes_df_processed, mlb, ingredient_mapping)
     
-    # Return the processed recipes
-    return recipes_df_processed
+    # Save the results
+    recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes.csv"), index=False)
+
 
 ##### Helper Functions #####
-def _onehot_encode_ingredients(df, mlb, keep_top_n=20):
-    """A helper function to one-hot encode the ingredients column of the recipes dataframe.
+def _onehot_encode_ingredients(df, mlb, ingredient_mapping_dict, min_num_occurances=100):
+    """A helper function to one-hot encode the ingredients column of the recipes dataframe.Before one-hot encoding, 
+    the ingredients are mapped to a smaller set of ingredients using the ingredient_mapping.csv file.
 
     Args:
         df (pd.DataFrame): The recipes dataframe.
         mlb (sklearn.preprocessing.MultiLabelBinarizer): An instance of the MultiLabelBinarizer class.
-        keep_top_n (int, optional): The number of ingredients to include in the dataset. Defaults to 20.
+        min_num_occurences (int, optional): The minimum number of occurances of an ingredient for it to be included in the one-hot encoding. Defaults to 10.
 
     Returns:
         pd.DataFrame: The recipes dataframe with the ingredients column one-hot encoded.
     """
     columns_minus_ingredients = list(df.columns.drop('ingredients'))
 
-    # Get the top n ingredients
+    # Explode the ingredients column
     df_processed = df.explode(column='ingredients')
+    
+    # Replace the ingredients using the ingredient mapping
+    df_processed['ingredients'] = df_processed['ingredients'].apply(lambda x: ingredient_mapping_dict[x])
+    
+    # Only keep ingredients if they occur often enough
     df_processed['ingredients'] = df_processed['ingredients'].str.strip()
     ingredient_counts = df_processed['ingredients'].value_counts()
-    top_n = ingredient_counts.iloc[:keep_top_n]
+    top_ingredients = ingredient_counts[ingredient_counts >= min_num_occurances]
     
-    # Seperate the recipes with and without ingredients in top_n
-    df_included = df_processed[df_processed['ingredients'].isin(top_n.index)]
+    # Seperate the recipes with and without ingredients in top_ingredients
+    df_included = df_processed[df_processed['ingredients'].isin(top_ingredients.index)]
     df_included = df_included.groupby(columns_minus_ingredients).agg({'ingredients': lambda x: list(x)}).reset_index()
     
-    df_excluded = df_processed[~df_processed['ingredients'].isin(top_n.index)]
+    df_excluded = df_processed[~df_processed['ingredients'].isin(top_ingredients.index)]
     df_excluded = df_excluded.groupby(columns_minus_ingredients).agg({'ingredients': lambda x: list(x)}).reset_index()
     
     # One-hot encode the ingredients
@@ -215,8 +236,7 @@ if __name__ == "__main__":
     interactions_df, recipes_df = load_raw_data(data_folder_path=os.path.join("..", "data"))
     
     print("Processing recipes...")
-    recipes_df_processed = process_recipes(recipes_df)
-    recipes_df_processed.to_csv(os.path.join("..", "data", "processed", "processed_recipes.csv"), index=False)
+    process_recipes(recipes_df, processed_data_folder_path=os.path.join("..", "data", "processed"))
 
     #num_recipes=50
     #print(f"Getting top {num_recipes} recipes...")
