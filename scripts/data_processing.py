@@ -129,6 +129,7 @@ def process_recipes(recipes_df, processed_data_folder_path=os.path.join("data", 
     recipes_df_processed = _onehot_encode_ingredients(recipes_df_processed, mlb, ingredient_mapping)
     
     # Save the results
+    print("Saving the results...")
     recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes.csv"), index=False)
 
 
