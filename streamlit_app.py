@@ -11,6 +11,8 @@ from components import recommended_recipies
 from components import about_us
 from config import PAGES
 
+from scripts.inference import get_recommended_recipes
+
 @st.cache_data
 def load_data():
     """ 
@@ -103,6 +105,8 @@ def run_UI():
 
 if __name__ == '__main__':
     ## Load the streamlit app with "Recipe Recommender" as default page
+    print(get_recommended_recipes([38, 38, 38, 38, 38]))
+
     if runtime.exists():
 
         ## Get the page name from the URL

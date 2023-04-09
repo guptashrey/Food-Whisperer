@@ -1,15 +1,13 @@
 import os
-import sys
-sys.path.append('..')
 
-from data_processing import load_processed_recipes_similarity, load_processed_recipes_display, load_raw_recipes
+from scripts.data_processing import load_processed_recipes_similarity, load_processed_recipes_display, load_raw_recipes
 
 import pandas as pd
 import numpy as np
 import numba
 
-recipes_df_similarity = load_processed_recipes_similarity(data_folder_path=os.path.join('..', 'data', 'processed'))
-recipes_df_display = load_processed_recipes_display(data_folder_path=os.path.join('..', 'data', 'processed'))
+recipes_df_similarity = load_processed_recipes_similarity(data_folder_path=os.path.join('data', 'processed'))
+recipes_df_display = load_processed_recipes_display(data_folder_path=os.path.join('data', 'processed'))
 
 @numba.jit(nopython=True, parallel=True)
 def fast_cosine_matrix(u, M):
