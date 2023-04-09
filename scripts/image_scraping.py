@@ -72,10 +72,10 @@ def scrape_image(recipe_name, recipe_id, image_save_folder_path="images", height
     return recipe_url, ImageFound
     
 if __name__ == "__main__":
-    recipe_name = "brownie  thins ii"
-    recipe_id = 337971
+    recipe_name = "alouette   potatoes"
+    recipe_id = 59389
     
-    url, imageFound = scrape_image(recipe_name, recipe_id,width=2000,height=500)
+    url, imageFound = scrape_image(recipe_name, recipe_id,width=500,height=500)
     print(f"Recipe Name: {recipe_name}")
     print(f"Recipe ID: {recipe_id}")
     print(f"Image Found: {imageFound}")
