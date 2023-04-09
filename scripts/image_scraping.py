@@ -19,7 +19,7 @@ def scrape_image(recipe_name, recipe_id, image_save_folder_path="images", height
         width (int, optional): the width of the resulting image you want. Defaults to None.
 
     Returns:
-        _type_: _description_
+        tuple: The url of the recipe page and whether the image was found
     """
     # Track whether we got an image or not
     ImageFound = True
