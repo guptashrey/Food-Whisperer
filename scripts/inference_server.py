@@ -8,7 +8,7 @@ app = FastAPI()
 @app.get("/search/{query}")
 async def search(query: int):
     '''
-    Search endpoint for searching reddit posts and research papers.
+    Search endpoint for recommending recipes.
     Args:
         query (str): Query string.
     Returns:
