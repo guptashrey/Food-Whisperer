@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.append('..')
 
-from data_processing import load_processed_recipes_similarity, load_processed_recipes_display, load_raw_recipes
+from data_processing import load_processed_recipes_similarity, load_processed_recipes_display
 
 import pandas as pd
 import numpy as np
@@ -10,6 +10,10 @@ import numba
 
 recipes_df_similarity = load_processed_recipes_similarity(data_folder_path=os.path.join('..', 'data', 'processed'))
 recipes_df_display = load_processed_recipes_display(data_folder_path=os.path.join('..', 'data', 'processed'))
+recipes_df_display["url"] = "https://www.food.com/recipe/" + recipes_df_display["name"].replace(' ', '-', regex=True) + "-" + recipes_df_display["id"].astype(str)
+recipe_name_mapping = pd.read_csv("../data/processed/recipe_name_mapping.csv")
+recipes_df_display = recipes_df_display.merge(recipe_name_mapping, on="name", how="left")
+recipes_df_display.corrected_name.fillna(recipes_df_display.name.str.title(), inplace=True)
 
 @numba.jit(nopython=True, parallel=True)
 def fast_cosine_matrix(u, M):
