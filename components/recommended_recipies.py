@@ -30,7 +30,11 @@ def recommended_recipes_UI():
             ## Display the recipe title
             with col2:
                 with st.container():
-                    st.subheader(recipe["name"])
+                    col6, col7 = st.columns([2, 1])
+                    with col6:
+                        st.subheader(recipe["corrected_name"])
+                    with col7:
+                        st.write(f'<div style="text-align:right"><a href="{recipe["url"]}" style="color:#ccc1c0;">View Recipe</a></div>', unsafe_allow_html=True)
                 
                 with st.container():
                     col3, col4, col5 = st.columns([1, 1, 1])
