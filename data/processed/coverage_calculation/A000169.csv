@@ -1,0 +1,499 @@
+,name,id,minutes,n_steps,ingredients,calories,fat_amount,sodium_amount,protein_amount,sugar_amount,saturated_fat,carbohydrates,cuisine
+0,creamy vinaigrette dressing,314367,10,2,"['vegetable oil', 'sugar', 'wine vinegar', 'salt', 'pepper', 'mayonnaise', 'mustard powder', 'garlic', 'shallot']",161.5,22.0,25.0,13.0,0.0,9.0,2.0,-
+1,my perfect aunt s salad dressing,477238,5,1,"['vegetable oil', 'apple cider', 'sugar', 'pepper', 'salt', 'garlic']",206.1,33.0,12.0,4.0,0.0,14.0,1.0,-
+2,nordstrom cafe champagne vinaigrette,304021,10,1,"['shallot', 'mustard', 'sugar', 'garlic', 'wine vinegar', 'salad oil', 'salt', 'pepper']",93.3,15.0,3.0,2.0,0.0,6.0,0.0,-
+3,parmesan dressing,143381,20,2,"['wine vinegar', 'vegetable oil', 'salt', 'pepper', 'garlic', 'parmesan cheese']",311.8,52.0,0.0,32.0,3.0,25.0,0.0,-
+4,sweet n tangy dressing,460824,10,3,"['vegetable oil', 'sugar', 'wine vinegar', 'garlic', 'salt', 'paprika', 'pepper']",1272.7,167.0,299.0,24.0,0.0,70.0,25.0,-
+5,apple cabbage slaw,476740,10,4,"['cabbage', 'apple', 'milk', 'lemon juice concentrate', 'sugar', 'durkee onion', 'celery', 'salt', 'pepper']",69.3,1.0,38.0,0.0,3.0,3.0,4.0,-
+6,easy red cabbage and apple saut,135399,70,5,"['cabbage', 'apple', 'durkee onion', 'garlic', 'sugar', 'vinegar', 'bacon fat', 'pepper', 'water']",173.2,0.0,112.0,3.0,9.0,0.0,14.0,-
+7,easy sweet and sour red cabbage saute,145226,30,5,"['oil', 'durkee onion', 'apple', 'cabbage', 'cider vinegar', 'sugar', 'celery seed', 'pepper']",212.9,16.0,89.0,1.0,4.0,7.0,9.0,-
+8,krassnaya kapusta  red cabbage,286665,150,6,"['cabbage', 'durkee onion', 'vinegar', 'sugar', 'apple', 'pepper', 'oil', 'water']",136.8,2.0,79.0,2.0,6.0,1.0,10.0,-
+9,sweet and sour red cabbage,12785,40,4,"['butter', 'cabbage', 'apple', 'vinegar', 'sugar', 'pepper']",147.8,7.0,84.0,2.0,3.0,13.0,9.0,-
+10,refreshing pina colada cake,125679,60,7,"['chocolate cake mix', 'egg', 'oil', 'water', 'coconut cream pudding mix', 'milk', 'cheese', 'pineapple chunk', 'whip']",357.0,25.0,128.0,17.0,10.0,32.0,16.0,['american']
+11,champaign cake,17773,35,7,"['chocolate cake mix', 'egg', 'oil', 'water', 'vanilla pudding', 'milk', 'cheese', 'pineapple chunk', 'whip', 'walnut']",456.2,38.0,145.0,19.0,12.0,54.0,17.0,-
+12,hawaiian pineapple poke cake,92274,50,9,"['chocolate cake mix', 'oil', 'egg', 'water', 'pineapple chunk', 'cheese', 'vanilla pudding', 'milk', 'topping', 'coconut', 'nut']",354.9,28.0,119.0,16.0,9.0,36.0,14.0,-
+13,mandarin  orange cake,293182,40,7,"['chocolate cake mix', 'juice', 'oil', 'egg', 'pineapple chunk', 'vanilla pudding', 'milk', 'whip']",363.0,30.0,123.0,13.0,7.0,29.0,14.0,-
+14,pineapple pudding cake,18501,55,6,"['chocolate cake mix', 'egg', 'oil', 'water', 'vanilla pudding', 'pineapple chunk', 'sugar', 'whip']",473.9,31.0,198.0,18.0,9.0,36.0,23.0,-
+15,best ever butter cookies,198916,140,18,"['butter', 'sugar', 'egg', 'wheat flour', 'juice', 'vanilla', 'baking powder', 'sugar', 'milk']",2815.0,195.0,1116.0,45.0,41.0,394.0,134.0,-
+16,brioche loaves,105241,1485,18,"['water', 'yeast', 'sugar', 'egg', 'wheat flour', 'salt', 'butter', 'egg', 'milk']",2151.2,176.0,84.0,109.0,107.0,325.0,74.0,-
+17,christmas danish pastry,66107,125,25,"['butter', 'water', 'sugar', 'yeast', 'milk', 'salt', 'egg', 'wheat flour', 'jumbo egg', 'vanilla', 'almond extract', 'walnut']",3199.1,212.0,779.0,80.0,103.0,390.0,147.0,-
+18,kringler,57386,45,8,"['wheat flour', 'butter', 'water', 'egg', 'almond extract', 'sugar', 'almond']",2523.6,226.0,715.0,45.0,47.0,450.0,92.0,-
+19,roll out cookies,19653,25,12,"['butter', 'sugar', 'egg', 'baking powder', 'vanilla', 'wheat flour']",1870.6,147.0,402.0,50.0,43.0,296.0,77.0,-
+20,biscuits made easy,265237,20,5,"['wheat flour', 'cooking oil', 'milk']",253.8,16.0,0.0,22.0,10.0,10.0,10.0,['american']
+21,creole wax beans,259009,30,4,"['wax bean', 'durkee onion', 'pepper', 'cooking oil', 'butter', 'wheat flour', 'tomato', 'salt', 'pepper']",136.0,14.0,17.0,17.0,4.0,20.0,4.0,['american']
+22,fatback gravy,241230,15,6,"['salt pork', 'wheat flour', 'milk', 'water', 'pepper']",19.5,1.0,0.0,0.0,2.0,3.0,0.0,['american']
+23,fearless skillet gravy,443040,15,9,"['oil', 'wheat flour', 'milk', 'pepper']",159.5,17.0,0.0,2.0,9.0,18.0,3.0,['american']
+24,salmon drops or salmon patties,270636,18,8,"['salmon', 'egg', 'wheat flour', 'pepper', 'baking powder', 'cooking oil']",203.2,7.0,0.0,7.0,50.0,5.0,4.0,['american']
+25,broccoli with mustard vinaigrette,202569,20,9,"['broccoli', 'garlic', 'cider vinegar', 'water', 'oil', 'grain mustard', 'salt']",51.8,3.0,5.0,7.0,4.0,1.0,2.0,-
+26,chicken breasts with maple soy marinade,208776,45,7,"['chicken breast halve', 'salt', 'pepper', 'soy sauce', 'maple syrup', 'oil', 'wine vinegar', 'garlic']",186.4,15.0,24.0,22.0,32.0,12.0,2.0,-
+27,maple glazed chicken livers,301527,25,11,"['chicken lifer', 'oil', 'shallot', 'wine vinegar', 'maple syrup', 'port', 'pepper']",414.0,30.0,44.0,6.0,67.0,22.0,5.0,-
+28,portuguese style pork cutlets,159063,30,9,"['pork loin chop', 'wine', 'oil', 'garlic', 'paprika', 'salt', 'water', 'wine vinegar', 'oil']",455.0,44.0,3.0,19.0,66.0,31.0,1.0,-
+29,slow roasted garlic,72402,80,11,"['garlic', 'oil', 'water']",129.2,7.0,2.0,0.0,7.0,3.0,6.0,-
+30,3 bean baked beans,187438,80,4,"['bacon', 'hamburger', 'durkee onion', 'kidney bean', 'bean', 'butter bean', 'sugar', 'sugar', 'ketchup', 'molasses', 'mustard']",574.8,35.0,134.0,48.0,46.0,39.0,23.0,-
+31,nyla s ranch beans,411103,375,6,"['bean', 'butter bean', 'kidney bean', 'bacon', 'ground beef', 'durkee onion', 'molasses', 'mustard', 'sugar', 'sugar', 'ketchup']",390.0,24.0,69.0,40.0,35.0,28.0,15.0,-
+32,old settler s beans,293942,75,4,"['ground beef', 'bacon', 'durkee onion', 'kidney bean', 'bean', 'butter bean', 'sugar', 'sugar', 'ketchup', 'molasses', 'mustard']",517.0,24.0,121.0,34.0,45.0,27.0,24.0,-
+33,old settlers beans,221809,135,6,"['bacon', 'ground beef', 'durkee onion', 'sugar', 'ketchup', 'mustard', 'sauce', 'molasses', 'bean', 'kidney bean', 'butter bean']",288.1,18.0,31.0,18.0,31.0,21.0,10.0,-
+34,slow cooked pork   beans,379031,380,5,"['bacon', 'durkee onion', 'bean', 'kidney bean', 'bean', 'butter bean', 'bean', 'sugar', 'cider vinegar', 'molasses', 'garlic', 'mustard']",456.5,29.0,80.0,39.0,31.0,31.0,19.0,-
+35,banana orange smoothie,29215,5,3,"['juice', 'yogurt', 'banana', 'vanilla extract', 'honey']",181.0,0.0,122.0,3.0,13.0,0.0,12.0,['american']
+36,pleasingly peachy,61360,5,1,"['peach', 'fruit yogurt', 'honey', 'vanilla extract', 'ice cube']",145.7,1.0,124.0,0.0,6.0,1.0,11.0,['american']
+37,peach   banana smoothie,245681,6,1,"['milk', 'yogurt', 'banana', 'peach', 'honey']",218.4,5.0,157.0,2.0,8.0,10.0,15.0,-
+38,peach blossom fuzz,317236,5,4,"['peach', 'banana', 'juice', 'ice', 'yogurt', 'honey', 'rum extract']",190.5,1.0,145.0,2.0,11.0,0.0,14.0,-
+39,peachy keen smoothie,258290,7,2,"['peach nectar', 'banana', 'fruit yogurt', 'peach', 'vanilla extract', 'sugar', 'ice']",182.9,1.0,115.0,1.0,7.0,2.0,13.0,-
+40,czech summer kohlrabi,286885,45,9,"['durkee onion', 'kohlrabi', 'butter', 'salt', 'pepper', 'wheat flour', 'milk', 'leaf parsley']",197.5,21.0,18.0,17.0,9.0,43.0,5.0,-
+41,jennifer s herb dumplings,151771,35,13,"['wheat flour', 'baking powder', 'salt', 'butter', 'pepper', 'leaf parsley', 'durkee onion', 'thyme sprigs', 'egg', 'milk']",84.9,6.0,0.0,9.0,4.0,11.0,3.0,-
+42,mushroom smothered swiss steak,95900,120,8,"['beef steak', 'butter', 'durkee onion', 'champignon mushroom', 'wheat flour', 'beef stock', 'milk', 'salt', 'pepper']",108.0,8.0,7.0,16.0,9.0,17.0,3.0,-
+43,no puree cauliflower soup,117306,50,13,"['head cauliflower', 'durkee onion', 'baby carrot', 'oil', 'kernel corn', 'leaf parsley', 'chicken broth', 'butter', 'wheat flour', 'milk', 'half', 'salt', 'pepper']",306.3,30.0,12.0,36.0,19.0,50.0,8.0,-
+44,old recipe for danish stew  stuvet oksekd,427962,180,18,"['butter', 'durkee onion', 'wheat flour', 'beef broth', 'beef steak', 'vinegar', 'salt', 'pepper', 'baking powder', 'leaf parsley', 'marjoram leaves', 'pepper', 'ice']",541.4,47.0,6.0,41.0,87.0,73.0,6.0,-
+45,fruit punch gelatin squares  uses 100  juice,241483,250,5,"['gelatin', 'gelatin', 'water', 'fruit punch']",53.8,0.0,46.0,2.0,3.0,0.0,4.0,-
+46,jello jigglers fusion,235605,183,6,"['banana gelatin', 'gelatin', 'water']",54.0,0.0,48.0,2.0,2.0,0.0,4.0,-
+47,light   easy creamy dessert,68722,50,4,"['gelatin', 'water', 'ice cube', 'yogurt']",63.2,1.0,17.0,10.0,14.0,3.0,2.0,-
+48,lime yogurt dessert,473981,15,9,"['water', 'gelatin', 'ice cube', 'yogurt']",92.6,2.0,66.0,4.0,5.0,4.0,5.0,-
+49,the knox blox i remember,209226,245,6,"['gelatin', 'gelatin', 'water']",18.2,0.0,15.0,0.0,1.0,0.0,1.0,-
+50,chicken and mango curry,25396,45,11,"['peanut butter', 'curry paste', 'garlic', 'coconut milk powder', 'chicken broth', 'chicken breast', 'ginger', 'durkee onion', 'bell pepper', 'bell pepper', 'mango', 'straw mushroom', 'seafood cocktail sauce', 'sugar', 'ground cilantro', 'grain rice']",1547.2,101.0,114.0,119.0,98.0,208.0,64.0,['thai']
+51,chicken with basil and red peppers,115178,30,6,"['vegetable oil', 'garlic', 'scallion', 'bell pepper', 'chicken breast', 'seafood cocktail sauce', 'soy sauce', 'sugar', 'leaf basil']",630.5,64.0,25.0,107.0,102.0,43.0,4.0,['thai']
+52,red curry chicken with basil,124533,25,12,"['vegetable oil', 'curry paste', 'coconut milk powder', 'chicken breast', 'sugar', 'seafood cocktail sauce', 'bell pepper', 'basil leave']",434.8,36.0,39.0,16.0,85.0,86.0,4.0,['thai']
+53,spicy thai peanut chicken curry,180506,30,9,"['peanut butter', 'curry paste', 'sambal oelek', 'chicken breast', 'coconut milk powder', 'seafood cocktail sauce', 'sugar', 'peanut butter', 'jasmine rice', 'peanut butter', 'lime']",995.5,81.0,351.0,53.0,81.0,149.0,30.0,['thai']
+54,thai satay kebabs,34275,20,10,"['sirloin steak', 'garlic', 'durkee onion', 'sugar', 'lime', 'juice', 'seafood cocktail sauce', 'tamarind pulp', 'water', 'vegetable oil', 'peanut butter', 'coconut milk powder', 'cayenne pepper', 'lemongrass', 'soy sauce', 'skewer']",611.2,70.0,47.0,49.0,66.0,97.0,7.0,['thai']
+55,easy delicious spanish rice,224222,10,4,"['grain rice', 'water', 'taco seasoning', 'rotel tomato', 'tomato sauce']",101.0,0.0,4.0,12.0,4.0,0.0,7.0,-
+56,no fail foolproof   rice,250026,31,5,"['grain rice', 'water']",234.0,0.0,0.0,0.0,8.0,0.0,17.0,-
+57,plain but perfect every time brown rice,88564,65,6,"['water', 'grain rice']",228.2,2.0,2.0,0.0,9.0,1.0,15.0,-
+58,plain rice     make ahead oamc throw it in the freezer,159839,40,7,"['grain rice', 'water']",263.2,0.0,0.0,0.0,9.0,0.0,19.0,-
+59,tomato spanish rice,244978,25,6,"['grain rice', 'water', 'chicken bouillon cube', 'tomato paste', 'chili powder', 'cumin powder', 'onion flake']",198.5,1.0,8.0,10.0,8.0,0.0,14.0,-
+60,20 minute easy ravioli  or tortellini bolognese,138700,20,9,"['cheese ravioli', 'oil', 'ground beef', 'durkee onion', 'garlic', 'tomato', 'tomato sauce', 'wine', 'champignon mushroom', 'leaf basil', 'oregano', 'pepper']",222.4,18.0,29.0,23.0,26.0,19.0,4.0,-
+61,healthier italian cube steak,290737,38,9,"['cube steak', 'sea salt', 'pepper', 'tomato sauce', 'champignon mushroom', 'leaf basil', 'oregano', 'garlic', 'durkee onion', 'mozzarella cheese', 'parmesan cheese', 'oil']",183.3,21.0,13.0,30.0,19.0,24.0,2.0,-
+62,italian saute,182107,25,6,"['oil', 'champignon mushroom', 'zucchini', 'durkee onion', 'oregano', 'marjoram leaves', 'leaf basil', 'sage', 'garlic', 'tomato', 'mozzarella cheese', 'pepper']",175.4,20.0,15.0,7.0,16.0,23.0,2.0,-
+63,nicole s easy meatless mushroom marinara,279055,45,9,"['oil', 'durkee onion', 'garlic', 'champignon mushroom', 'garlic', 'tomato sauce', 'leaf basil', 'pepper']",113.5,11.0,24.0,25.0,6.0,5.0,3.0,-
+64,vegan one pot pasta,147034,25,8,"['oil', 'durkee onion', 'champignon mushroom', 'tomato', 'tomato sauce', 'water', 'leaf basil', 'oregano', 'sugar', 'garlic', 'pepper', 'macaroni']",290.5,4.0,46.0,13.0,21.0,2.0,19.0,-
+65,green jumbo boiled peanuts,246711,846,9,"['peanut butter', 'salt', 'water']",2571.9,343.0,72.0,947.0,234.0,155.0,24.0,['american']
+66,beef pastrami,217475,32040,23,"['beef brisket', 'peppercorn', 'thyme sprigs', 'leave', 'clove', 'garlic', 'juniper berry', 'water', 'sugar', 'salt', 'pepper']",1989.5,232.0,159.0,900.0,197.0,304.0,18.0,-
+67,corned beef and cabbage   the right way,258854,10320,21,"['water', 'salt', 'sugar', 'mustard', 'spice', 'garlic', 'beef brisket', 'celery rib', 'durkee onion', 'potato', 'baby carrot', 'rutabaga', 'cabbage']",2035.7,218.0,183.0,1197.0,196.0,283.0,29.0,-
+68,fantastic spicy and super juicy turkey,341235,180,23,"['turkey', 'water', 'ice', 'salt', 'sugar', 'cinnamon candy', 'caraway seed', 'clove', 'star anise', 'orange', 'garlic', 'leaf parsley', 'marjoram leaves', 'rosemary sprigs', 'durkee onion', 'mustard seed', 'chili pepper', 'apple', 'juniper berry', 'oil', 'butter', 'salt pork', 'orange']",2273.2,186.0,250.0,2391.0,415.0,186.0,26.0,-
+69,garlic rosemary roast chicken with jus,222223,150,34,"['table salt', 'garlic', 'rosemary sprigs', 'chicken meat', 'pepper', 'olive oil', 'chicken broth', 'water', 'wine', 'pepper']",3241.2,354.0,7.0,2416.0,483.0,317.0,9.0,-
+70,a a a absolutely the cranberry relish,269418,20,4,"['cranberry', 'apple', 'raisin', 'sugar', 'juice concentrate']",128.1,0.0,103.0,0.0,1.0,0.0,11.0,['american']
+71,cranberry apple jam,469440,20,4,"['cranberry', 'apple', 'sugar', 'juice', 'zest', 'cinnamon']",21.0,0.0,17.0,0.0,0.0,0.0,1.0,['american']
+72,easy candied cranberries,279393,20,5,"['cranberry', 'sugar']",56.1,0.0,49.0,0.0,0.0,0.0,4.0,['american']
+73,farmhouse cranberry applesauce for the holiday table,318549,40,6,"['apple', 'cranberry', 'water', 'sugar', 'cinnamon']",138.0,0.0,116.0,0.0,0.0,0.0,12.0,['american']
+74,microwave cranberry relish,293841,6,4,"['cranberry', 'sugar', 'orange']",128.5,0.0,117.0,0.0,0.0,0.0,11.0,['american']
+75,betty crocker 1950s tuna noodle casserole,266460,4010,5,"['spaghetti noodle', 'tuna', 'pepper', 'pimiento', 'durkee onion', 'salt', 'mushroom soup', 'champignon mushroom', 'cheese']",467.2,26.0,15.0,53.0,52.0,34.0,17.0,-
+76,crispy macaroni and cheese,154069,70,4,"['macaroni', 'mushroom soup', 'milk', 'mustard', 'pepper', 'cheddar cheese', 'durkee onion']",473.1,39.0,8.0,35.0,44.0,69.0,12.0,-
+77,crockette macaroni   cheese,186369,17,4,"['macaroni', 'butter', 'milk', 'salt', 'cheese', 'durkee onion']",433.6,25.0,3.0,31.0,32.0,48.0,18.0,-
+78,microwaved scalloped potatoes,393973,45,5,"['mushroom soup', 'milk', 'salt', 'pepper', 'potato', 'durkee onion']",212.1,8.0,15.0,32.0,11.0,8.0,12.0,-
+79,stuvade makaroner  stewed macaroni,200902,30,5,"['milk', 'macaroni', 'salt', 'pepper']",325.6,13.0,57.0,6.0,28.0,24.0,15.0,-
+80,cherry tomato and zucchini saut,174221,7,6,"['oil', 'zucchini', 'tomato', 'durkee onion', 'vinegar', 'pepper', 'leaf basil', 'pine nut']",91.7,10.0,19.0,0.0,5.0,3.0,2.0,['italian']
+81,green and red tomato rice,91524,40,6,"['oil', 'tomato', 'tomato', 'durkee onion', 'garlic', 'pepper', 'grain rice']",154.5,4.0,10.0,0.0,6.0,2.0,9.0,['italian']
+82,tomato   garlic bruschetta bread,174237,18,7,"['tomato', 'durkee onion', 'leaf parsley', 'garlic', 'apple juice', 'vinegar', 'pepper', 'oil', 'ciabatta']",96.4,10.0,20.0,0.0,2.0,5.0,2.0,['italian']
+83,tomato cucumber onion salad,46008,10,3,"['cucumber', 'tomato', 'durkee onion', 'oil', 'vinegar', 'pepper']",33.7,0.0,17.0,0.0,2.0,0.0,2.0,['italian']
+84,tomatoes  mozzarella and peppers,63714,10,6,"['tomato', 'pepper', 'mozzarella cheese', 'pepper', 'basil leave', 'oil', 'vinegar']",32.8,0.0,19.0,0.0,3.0,0.0,2.0,['italian']
+85,chicken bacon roulades,283818,55,29,"['shallot', 'bacon', 'chicken breast halve', 'lemon pepper seasoning', 'parmesan cheese', 'oil', 'garlic', 'wine', 'butter', 'wheat flour', 'chicken broth', 'cream']",608.1,68.0,2.0,37.0,78.0,89.0,2.0,-
+86,herb cheese stuffed chicken breasts with red pepper sauce,381276,20,28,"['bell pepper', 'cream', 'chicken broth', 'cheese', 'tarragon sprig', 'chicken breast halve', 'oil', 'wine']",412.9,40.0,15.0,7.0,62.0,70.0,2.0,-
+87,pan roasted duck breast w  truffled polenta and lingonberry sauc,436071,70,45,"['wine', 'chicken broth', 'beef broth', 'thyme sprigs', 'leaf', 'butter', 'wheat flour', 'lingonberry preserve', 'vegetable oil cooking spray', 'oil', 'garlic', 'champignon mushroom', 'shiitake mushroom', 'polenta', 'truffle oil', 'duck breast']",501.9,22.0,58.0,17.0,81.0,19.0,12.0,-
+88,roasted red pepper   asparagus stuffed chicken breasts,87301,85,28,"['chicken breast halve', 'pepper', 'prosciutto', 'cheese', 'pepper', 'asparagus spear', 'oil', 'butter', 'wine', 'basil leave', 'asparagus spear', 'pepper']",431.3,44.0,3.0,12.0,66.0,69.0,1.0,-
+89,thick and creamy broccoli cheese soup,107212,40,24,"['broccoli', 'durkee onion', 'chicken broth', 'cheese', 'cheese', 'half', 'wheat flour', 'butter', 'pepper', 'cornstarch', 'water', 'oil']",774.8,87.0,14.0,68.0,82.0,170.0,9.0,-
+90,easy creamed spinach,340859,15,4,"['cream', 'spinach', 'salt', 'pepper', 'nutmeg']",146.7,18.0,5.0,16.0,12.0,36.0,2.0,-
+91,emeril s crab imperial,90618,35,7,"['crabmeat', 'mayonnaise', 'bell pepper', 'bell pepper', 'shallot', 'leaf parsley', 'tarragon sprig', 'salt', 'pepper', 'caviar', 'breadcrumb', 'parmesan cheese', 'pea shoot', 'vegetable oil']",101.3,14.0,2.0,24.0,4.0,7.0,0.0,-
+92,fettuccine hungry girlfredo    ww points   1,333277,10,7,"['tofu shirataki noodle', 'cow cheese', 'cream', 'parmesan cheese', 'pepper']",60.9,6.0,1.0,4.0,8.0,13.0,0.0,-
+93,sauteed spinach cream sauce,146374,10,6,"['butter', 'spinach', 'cream', 'salt', 'pepper']",58.3,8.0,0.0,5.0,2.0,17.0,0.0,-
+94,summer tomato bake,309495,35,5,"['spinach', 'lemon juice concentrate', 'cream', 'champignon mushroom', 'tomato', 'salt', 'pepper', 'parmesan cheese']",124.9,10.0,12.0,14.0,18.0,19.0,3.0,-
+95,blackberry margaritas,33847,5,3,"['blackberry', 'tequila', 'sec', 'lime juice concentrate', 'ice']",109.0,1.0,48.0,0.0,6.0,0.0,8.0,['american']
+96,blue lagoon margarita,33755,5,4,"['tequila', 'blue curacao', 'lime juice concentrate', 'mix', 'pineapple juice', 'ice', 'wedge', 'sugar']",36.0,0.0,20.0,0.0,0.0,0.0,3.0,"['american', 'mexican']"
+97,pineapple margarita,35486,5,4,"['tequila', 'sec', 'pineapple juice', 'lime juice concentrate', 'mix', 'pineapple chunk', 'ice']",79.5,0.0,66.0,0.0,1.0,0.0,6.0,"['american', 'mexican']"
+98,spotted lizard margaritas,36635,5,3,"['tequila', 'sec', 'mix', 'lime juice concentrate', 'mango', 'pineapple chunk', 'fruit', 'ice', 'wedge', 'sugar']",132.4,0.0,115.0,0.0,2.0,0.0,11.0,"['american', 'mexican']"
+99,turquoise blue,45758,2,1,"['bacardi light rum', 'sec', 'blue curacao', 'mix', 'pineapple juice']",56.5,0.0,18.0,0.0,0.0,0.0,1.0,['american']
+100,beef and rice casserole,90405,95,4,"['ground beef', 'grain rice', 'celery soup', 'water', 'salt', 'celery seed', 'pepper', 'durkee onion', 'bell pepper']",387.2,31.0,4.0,43.0,47.0,37.0,8.0,-
+101,crock pot chicken with mushroom soup,98305,370,5,"['chicken breast', 'mushroom soup', 'durkee onion', 'garlic', 'celery seed', 'pepper', 'grain rice', 'water']",688.7,27.0,8.0,40.0,77.0,23.0,30.0,-
+102,hamburger hotdish with rice,216524,160,2,"['hamburger', 'celery seed', 'durkee onion', 'grain rice', 'mushroom soup', 'rice soup', 'water']",596.6,38.0,9.0,36.0,82.0,43.0,16.0,-
+103,hoppin john,212575,50,4,"['sausage meat', 'grain rice', 'butter', 'durkee onion', 'salt', 'pepper', 'pea', 'water']",274.3,18.0,3.0,52.0,13.0,37.0,11.0,-
+104,st paul s rice,231946,75,5,"['sausage', 'grain rice', 'chicken noodle soup mix', 'pepper', 'durkee onion', 'celery seed', 'water']",281.6,25.0,5.0,31.0,27.0,26.0,6.0,-
+105,amish funnel cake,380359,15,16,"['wheat flour', 'egg', 'milk', 'sugar', 'baking powder', 'salt', 'sugar', 'oil']",349.3,9.0,34.0,16.0,24.0,13.0,20.0,-
+106,authentic indian taco fry bread,350197,60,16,"['water', 'yeast cake', 'wheat flour', 'margarine', 'milk', 'egg', 'sugar', 'salt', 'oil']",767.0,40.0,68.0,20.0,32.0,26.0,38.0,-
+107,grandma s  western style pancakes     and or waffles,203678,22,8,"['wheat flour', 'baking powder', 'sugar', 'salt', 'egg', 'milk', 'oil']",555.8,39.0,51.0,40.0,27.0,30.0,22.0,-
+108,kicked up monte cristos,283022,30,13,"['gouda cheese', 'bread', 'pastrami', 'deli ham', 'egg', 'milk', 'wheat flour', 'oil', 'raspberry preserve', 'cayenne pepper', 'sugar']",587.2,37.0,96.0,65.0,61.0,63.0,20.0,-
+109,panikeke lapotopoto   samonan round pancakes,457751,15,9,"['wheat flour', 'baking powder', 'sugar', 'salt', 'egg', 'milk', 'water', 'oil']",725.6,8.0,201.0,21.0,36.0,11.0,49.0,-
+110,delicious cranberry punch,77135,8,3,"['cranberry', 'juice', 'pineapple juice', 'lemon juice concentrate', 'water', 'sugar', 'almond extract']",601.3,1.0,513.0,0.0,4.0,0.0,49.0,-
+111,holiday punch,146979,5,3,"['cranberry', 'juice', 'pineapple juice', 'lemon juice concentrate', 'water', 'sugar', 'almond extract']",601.3,1.0,513.0,0.0,4.0,0.0,49.0,-
+112,july 4th firecracker punch,31582,15,4,"['cranberry', 'sugar', 'pineapple juice', 'almond extract', 'ginger ale']",148.0,0.0,139.0,0.0,0.0,0.0,12.0,-
+113,mom s party slush,104526,1450,4,"['aid', 'aid', 'sugar', 'pineapple juice', 'juice', 'water', 'lemon juice concentrate', 'ginger ale']",208.9,0.0,198.0,0.0,1.0,0.0,17.0,-
+114,sparkling pineapple lemonade,90380,5,5,"['sugar', 'pineapple juice', 'lemon juice concentrate', 'ginger ale']",578.6,0.0,530.0,1.0,3.0,0.0,49.0,-
+115,carrot puff,140958,65,7,"['baby carrot', 'butter', 'egg', 'sugar', 'wheat flour', 'baking powder', 'vanilla']",344.5,27.0,148.0,10.0,8.0,52.0,14.0,-
+116,delicioso carrot souffle,394243,60,7,"['baby carrot', 'butter', 'baking powder', 'vanilla', 'sugar', 'wheat flour', 'egg']",135.1,3.0,71.0,6.0,7.0,3.0,8.0,-
+117,ooey   gooey,98376,45,8,"['margarine', 'sugar', 'sugar', 'egg', 'vanilla', 'semisweet chocolate chip', 'wheat flour', 'baking powder']",165.1,9.0,72.0,2.0,4.0,9.0,8.0,-
+118,piccadilly s sweet carrot souffle,21537,80,11,"['baby carrot', 'sugar', 'baking powder', 'vanilla extract', 'wheat flour', 'egg', 'margarine', 'sugar']",275.5,20.0,119.0,12.0,7.0,14.0,12.0,-
+119,shortcake  sockerkaka,14868,45,8,"['sugar', 'egg', 'wheat flour', 'margarine', 'vanilla', 'milk', 'baking powder']",235.0,15.0,76.0,8.0,7.0,10.0,10.0,-
+120,mae s turkey lasagna,428131,105,13,"['turkey breast', 'champignon mushroom', 'baby carrot', 'durkee onion', 'garlic', 'oregano', 'leaf basil', 'salt', 'pepper', 'pepper flake', 'tomato sauce', 'tomato paste', 'tomato', 'spinach', 'light cream cheese', 'cottage cheese', 'lemon juice concentrate', 'lasagna noodle', 'skim mozzarella cheese', 'parmesan cheese']",505.9,23.0,57.0,78.0,84.0,33.0,17.0,-
+121,pizza by the yard,154100,31,13,"['bread', 'ground beef', 'tomato paste', 'durkee onion', 'olive', 'water', 'salt', 'oregano', 'pepper', 'parmesan cheese', 'tomato', 'pepper', 'pizza cheese']",406.9,18.0,21.0,44.0,51.0,23.0,16.0,-
+122,rich no boil lasagne,326416,100,19,"['lasagna noodle', 'egg', 'cottage cheese', 'skim mozzarella cheese', 'parmesan cheese', 'oil', 'sausage', 'durkee onion', 'garlic', 'tomato', 'tomato paste', 'wine', 'water', 'oregano', 'leaf basil', 'pepper']",457.4,42.0,27.0,54.0,69.0,66.0,5.0,-
+123,stuffed bell peppers with rice and veggies,281017,60,13,"['vegetable oil', 'garlic', 'durkee onion', 'minute rice', 'water', 'oregano', 'tomato', 'kernel corn', 'parmesan cheese', 'salt', 'pepper', 'bell pepper', 'skim mozzarella cheese']",458.9,18.0,37.0,22.0,40.0,27.0,23.0,-
+124,zucchini crust pizza,250852,58,16,"['zucchini', 'egg substitute', 'purpose flour', 'salt', 'skim mozzarella cheese', 'tomato', 'durkee onion', 'pepper', 'pepper', 'oregano', 'leaf basil', 'parmesan cheese']",172.9,10.0,18.0,22.0,30.0,21.0,4.0,-
+125,taku glacier lodge salmon baste,231766,10,7,"['butter', 'sugar', 'lemon juice concentrate', 'wine', 'salmon']",496.0,30.0,71.0,11.0,115.0,35.0,6.0,['american']
+126,asian spiced salmon with wasabi mayonnaise,262720,35,8,"['mayonnaise', 'soy sauce', 'sugar', 'wasabi', 'garlic', 'lemon juice concentrate', 'salmon']",653.7,47.0,42.0,124.0,137.0,23.0,8.0,-
+127,salmon marinade with dill  butter and lemon,39052,10,4,"['butter', 'lemon juice concentrate', 'weed', 'lemon pepper seasoning', 'salmon']",884.3,83.0,0.0,26.0,187.0,127.0,0.0,-
+128,sweet soy glazed salmon,141562,30,7,"['sugar', 'oil', 'soy sauce', 'lemon juice concentrate', 'wine', 'salmon']",466.5,22.0,54.0,40.0,129.0,11.0,4.0,-
+129,yummy island drumsticks,87362,130,10,"['chicken drumstick', 'butter', 'soy sauce', 'sugar', 'wine', 'mustard']",834.0,65.0,175.0,151.0,117.0,90.0,15.0,-
+130,easy broiled asparagus,454021,16,11,"['asparagus spear', 'salt', 'pepper', 'oil']",85.7,10.0,5.0,24.0,5.0,4.0,1.0,['american']
+131,roasted potato fennel soup,288439,150,11,"['potato', 'oil', 'garlic', 'salt', 'pepper', 'durkee onion', 'fennel bulb', 'chicken stock', 'cream']",428.1,31.0,36.0,47.0,24.0,37.0,16.0,['american']
+132,simply roasted fennel,415967,50,4,"['fennel bulb', 'oil', 'pepper']",44.1,3.0,0.0,1.0,1.0,1.0,1.0,['american']
+133,skinny  fries,250232,50,10,"['russet potato', 'oil', 'seasoning salt', 'pepper']",160.2,5.0,5.0,0.0,5.0,2.0,10.0,['american']
+134,fennel vichyssoise with smoked salmon,257110,30,7,"['butter', 'fennel bulb', 'leek', 'russet potato', 'fennel seed', 'salt', 'pepper', 'chicken stock', 'salmon']",389.4,20.0,31.0,26.0,29.0,32.0,18.0,-
+135,arrabiata penne,407452,60,7,"['penne pasta', 'tomato', 'oil', 'durkee onion', 'garlic', 'chili pepper flake', 'leaf basil', 'pepper', 'sugar', 'parmesan cheese']",591.4,30.0,31.0,8.0,29.0,22.0,31.0,['italian']
+136,delicious and simple ricotta and tomato pasta sauce,105717,15,9,"['ricotta cheese', 'tomato', 'durkee onion', 'garlic', 'tomato paste', 'parmesan cheese', 'salt', 'pepper', 'oil', 'leaf basil', 'penne pasta']",762.9,34.0,31.0,40.0,65.0,57.0,35.0,['italian']
+137,pasta with hot tomato   bacon sauce,20083,40,14,"['bacon', 'oil', 'durkee onion', 'garlic', 'tomato', 'leaf basil', 'sugar', 'salt', 'pepper flake', 'leaf parsley', 'penne pasta', 'parmesan cheese']",741.7,39.0,52.0,48.0,43.0,34.0,35.0,['italian']
+138,pasta with spicy sun dried tomato cream sauce,10440,20,12,"['oil', 'garlic', 'oil', 'cream', 'pepper', 'pepper flake', 'leaf basil', 'penne pasta', 'parmesan cheese']",824.9,60.0,1.0,49.0,43.0,96.0,34.0,"['american', 'italian']"
+139,penna alla rocca,75526,35,8,"['olive oil', 'durkee onion', 'garlic', 'pepper', 'tomato', 'tomato paste', 'penne pasta', 'parmesan cheese', 'leaf basil', 'salt', 'vinegar']",551.0,38.0,20.0,29.0,29.0,30.0,23.0,['italian']
+140,braised cabbage with bacon,160512,60,4,"['slab bacon', 'durkee onion', 'cabbage head', 'salt', 'pepper', 'water']",14.5,0.0,6.0,16.0,0.0,0.0,1.0,-
+141,roasted asparagus  mushrooms and onions,216653,35,6,"['asparagus', 'champignon mushroom', 'durkee onion', 'vegetable oil', 'salt', 'pepper']",78.7,7.0,10.0,12.0,8.0,3.0,2.0,-
+142,rutabaga soup,77181,555,6,"['water', 'salt', 'rutabaga', 'durkee onion', 'minute rice', 'pepper', 'tarragon sprig']",94.6,0.0,35.0,25.0,5.0,0.0,7.0,-
+143,ww 1 point   roast parmesan asparagus,130476,25,8,"['asparagus', 'water', 'lemon juice concentrate', 'pepper', 'salt', 'parmesan cheese']",26.8,0.0,6.0,0.0,5.0,0.0,1.0,-
+144,yellow turnip soubise,401387,60,7,"['turnip', 'durkee onion', 'minute rice', 'water', 'salt', 'pepper']",86.7,0.0,27.0,27.0,4.0,0.0,6.0,-
+145,easy peel boiled eggs,531398,25,9,"['egg', 'water']",71.5,7.0,0.0,5.0,12.0,7.0,0.0,-
+146,egg peeling for egg salad,159270,15,8,"['egg', 'water']",71.5,7.0,0.0,2.0,12.0,7.0,0.0,-
+147,foolproof hard boiled eggs,64854,22,9,"['egg', 'water']",71.5,7.0,0.0,2.0,12.0,7.0,0.0,-
+148,the easiest perfect hard boiled eggs  technique,302972,21,9,"['egg', 'water']",71.5,7.0,0.0,2.0,12.0,7.0,0.0,-
+149,the most perfect hard boiled eggs  no needles involved,385136,38,9,"['egg', 'water', 'water']",143.0,14.0,1.0,5.0,25.0,15.0,0.0,-
+150,high altitude pumpkin bread,411043,70,9,"['egg', 'sugar', 'vanilla', 'salt', 'baking powder', 'nutmeg', 'vegetable oil', 'pumpkin puree', 'wheat flour', 'baking soda', 'cinnamon', 'nut', 'raisin']",2382.5,141.0,835.0,131.0,63.0,69.0,121.0,-
+151,low fat apple bread,76233,90,13,"['applesauce', 'egg', 'sugar', 'vanilla', 'apple', 'wheat flour', 'cinnamon', 'nutmeg', 'baking soda', 'salt', 'nut']",1772.2,14.0,881.0,80.0,59.0,14.0,132.0,-
+152,maureen s pumpkin bread,400311,75,8,"['shortening', 'sugar', 'egg', 'sugar pumpkin', 'water', 'wheat flour', 'baking soda', 'salt', 'baking powder', 'cinnamon', 'clove', 'nut', 'raisin']",3076.6,160.0,1221.0,171.0,94.0,120.0,168.0,-
+153,moist  cinnamon apple quick bread,260712,60,7,"['wheat flour', 'sugar', 'sugar', 'baking powder', 'baking soda', 'salt', 'cinnamon', 'nutmeg', 'vanilla', 'egg white', 'applesauce', 'apple']",1814.8,5.0,699.0,66.0,68.0,4.0,138.0,-
+154,pumpkin bread   the best i ve ever tasted,101376,65,13,"['wheat flour', 'sugar', 'salt', 'baking powder', 'cinnamon', 'allspice', 'baking soda', 'water', 'oil', 'sugar pumpkin', 'egg', 'raisin', 'nut']",2485.4,160.0,930.0,103.0,67.0,74.0,122.0,-
+155,all purpose seasoning salt,209434,5,4,"['salt', 'garlic', 'durkee onion', 'pepper']",294.4,2.0,11.0,1180.0,24.0,2.0,22.0,-
+156,asian five spice rub,451511,5,1,"['spice powder', 'sugar', 'salt', 'cayenne pepper', 'garlic']",253.2,1.0,217.0,1163.0,3.0,1.0,20.0,-
+157,marty s hot salt,258735,5,2,"['salt', 'pepper', 'pepper', 'garlic', 'chili powder', 'accent seasoning']",39.4,2.0,5.0,1000.0,3.0,1.0,2.0,-
+158,savory steak seasoning  for all types of meat,73103,5,2,"['salt', 'onion powder', 'garlic', 'paprika', 'celery seed', 'sugar', 'pepper', 'nutmeg']",369.5,12.0,120.0,1165.0,21.0,13.0,25.0,-
+159,spicy season salt,326843,5,2,"['onion powder', 'garlic', 'pepper', 'pepper', 'paprika', 'salt']",190.0,3.0,14.0,1164.0,16.0,2.0,14.0,-
+160,olive garden pasta e fagioli soup in a crock pot  copycat,31717,435,4,"['ground beef', 'durkee onion', 'baby carrot', 'celery seed', 'tomato', 'kidney bean', 'kidney bean', 'beef stock', 'oregano', 'pepper', 'leaf parsley', 'tabasco jalapeno sauce', 'tomato pasta sauce', 'penne pasta']",377.3,20.0,33.0,23.0,49.0,24.0,13.0,['italian']
+161,quick pasta e fagioli   olive garden,158440,30,8,"['ground beef', 'durkee onion', 'tomato', 'kidney bean', 'beef stock', 'oregano', 'pepper', 'leaf parsley', 'tabasco jalapeno sauce', 'tomato pasta sauce', 'penne pasta']",197.6,4.0,32.0,32.0,16.0,3.0,11.0,['italian']
+162,rudy s pasta e fagioli,443612,45,10,"['oil', 'baby carrot', 'celery seed', 'durkee onion', 'ground beef', 'pepper', 'beef stock', 'tomato', 'kidney bean', 'cannellini', 'oregano', 'leaf parsley', 'habanero sauce', 'tomato paste', 'penne pasta']",227.3,13.0,12.0,23.0,32.0,15.0,7.0,['italian']
+163,new haven pasta e fagioli,360339,490,6,"['ground beef', 'sausage', 'baby carrot', 'garlic', 'durkee onion', 'celery seed', 'tomato', 'tomato', 'basil pasta sauce', 'bean', 'kidney bean', 'nonfat beef broth', 'oregano', 'seasoning salt', 'fennel seed', 'pepper', 'leaf parsley', 'pepper flake', 'ditalini']",286.8,17.0,16.0,23.0,35.0,19.0,9.0,-
+164,no fuss veggie soup  crock pot,382044,250,3,"['ground beef', 'durkee onion', 'baby carrot', 'celery seed', 'tomato', 'kidney bean', 'kernel corn', 'bean', 'champignon mushroom', 'water', 'beef bouillon cube', 'oregano', 'pepper', 'leaf parsley', 'tomato pasta sauce']",490.5,23.0,84.0,55.0,57.0,25.0,21.0,-
+165,bull s eye breakfast,352739,16,8,"['bread', 'butter', 'egg']",140.0,8.0,5.0,10.0,16.0,8.0,4.0,['american']
+166,cheddar baked bagels and eggs,14549,40,7,"['wheat bagel', 'butter', 'egg', 'salt', 'pepper', 'cheddar cheese']",540.3,33.0,1.0,47.0,54.0,49.0,19.0,['american']
+167,cheesy tomato casserole,163849,45,3,"['tomato', 'ritz cracker', 'cheddar cheese', 'butter', 'egg', 'salt', 'paprika']",149.3,14.0,28.0,17.0,15.0,26.0,3.0,['american']
+168,grilled cheese sandwiches for many,63737,17,5,"['bread', 'cheddar cheese', 'butter']",494.4,54.0,9.0,30.0,35.0,109.0,8.0,['american']
+169,pegge s world famous cheese grits,146271,75,4,"['grit', 'butter', 'velveeta cheese', 'salt', 'tabasco jalapeno sauce', 'egg']",425.4,45.0,19.0,41.0,26.0,91.0,8.0,['american']
+170,a meal in one,246991,35,8,"['ground beef', 'durkee onion', 'chili powder', 'tomato sauce', 'wheat elbow macaroni', 'pepper', 'cheddar cheese']",443.7,33.0,16.0,23.0,68.0,53.0,9.0,-
+171,hot delicious chili,45503,315,3,"['chili bean', 'tomato sauce', 'ground beef', 'chili powder', 'tomato', 'durkee onion', 'chili salsa']",451.4,11.0,44.0,69.0,64.0,13.0,22.0,-
+172,mrs  lundin s chili with noodles,166804,30,8,"['ground beef', 'durkee onion', 'tomato sauce', 'tomato', 'chili powder', 'kidney bean', 'egg noodle', 'pepper']",546.6,22.0,39.0,34.0,69.0,25.0,24.0,-
+173,not quite chili,492889,15,6,"['ground beef', 'chili bean', 'corn', 'pepper', 'durkee onion', 'garlic', 'chili powder', 'cumin powder', 'tomato sauce', 'cheddar cheese']",531.9,35.0,16.0,32.0,74.0,49.0,15.0,-
+174,yummy cincinnati chili,101888,30,6,"['beef sirloin', 'durkee onion', 'tomato sauce', 'tomato', 'kidney bean', 'chili powder', 'pepper', 'spaghetti', 'cheddar cheese', 'cream']",623.8,29.0,34.0,25.0,79.0,36.0,24.0,-
+175,black bean soup,24662,60,7,"['bean', 'ham hock', 'durkee onion', 'garlic', 'cumin', 'water', 'chicken broth', 'wine vinegar', 'sugar', 'durkee onion']",459.0,3.0,21.0,16.0,58.0,3.0,27.0,-
+176,fantastic black bean soup,197658,25,8,"['vegetable oil', 'garlic', 'durkee onion', 'baby carrot', 'bean', 'chicken stock', 'cumin', 'leaf parsley']",196.8,6.0,18.0,9.0,22.0,4.0,9.0,-
+177,italian bean   tuna salad,194530,10,5,"['bean', 'vegetable oil', 'olive oil', 'wine vinegar', 'garlic', 'durkee onion', 'leaf parsley']",434.1,26.0,3.0,8.0,62.0,13.0,13.0,-
+178,portuguese bean and garlic omelet,369856,32,7,"['durkee onion', 'oil', 'garlic', 'ham', 'bean', 'salt', 'pepper', 'ground cilantro', 'egg']",401.2,29.0,8.0,40.0,47.0,20.0,11.0,-
+179,wild game meatballs,356806,40,9,"['ground elk', 'bacon', 'durkee onion', 'garlic', 'egg']",449.8,51.0,2.0,21.0,64.0,59.0,0.0,-
+180,arizona avocado salad,97269,45,4,"['avocado', 'durkee onion', 'lemon juice concentrate', 'chili powder', 'cumin powder', 'tabasco jalapeno sauce', 'salt', 'tomato', 'lettuce leave']",272.9,34.0,19.0,1.0,9.0,16.0,6.0,['mexican']
+181,fajita steak marinade,242695,10,4,"['rice vinegar', 'chili powder', 'cumin powder', 'garlic']",107.6,7.0,6.0,8.0,8.0,3.0,6.0,"['american', 'mexican']"
+182,good guacamole for two,17315,75,4,"['avocado', 'durkee onion', 'tomato', 'garlic', 'sea salt']",184.9,22.0,12.0,3.0,5.0,10.0,4.0,"['american', 'mexican']"
+183,red enchilada sauce,12877,15,4,"['oil', 'garlic', 'onion powder', 'cumin powder', 'chili powder', 'wheat flour', 'chicken broth', 'tomato sauce']",141.8,9.0,14.0,46.0,15.0,5.0,5.0,"['american', 'mexican']"
+184,skips chili seasoning mix,198942,10,4,"['chili powder', 'cumin powder', 'garlic', 'onion powder', 'salt', 'cornstarch']",18.6,0.0,1.0,20.0,1.0,0.0,1.0,['american']
+185,deep fried french fries,419360,25,11,"['potato', 'canola oil']",246.0,0.0,9.0,0.0,12.0,0.0,18.0,-
+186,farm fresh baked potato chips,392303,50,12,"['potato', 'salt']",349.6,0.0,14.0,1.0,18.0,0.0,26.0,-
+187,homemade  fat free  pasta,15767,90,13,"['purpose flour', 'egg substitute']",178.0,2.0,1.0,2.0,16.0,1.0,10.0,-
+188,how to turn all purpose flour into cake flour,476731,5,13,"['purpose flour', 'cornstarch']",516.0,1.0,1.0,0.0,25.0,1.0,36.0,-
+189,quick and easy cherry chocolate chip cookies,198537,58,20,"['chocolate chip cookie dough', 'purpose flour', 'candy coating', 'decorating icing', 'maraschino cherry']",96.5,4.0,27.0,1.0,1.0,4.0,5.0,-
+190,amish country potato soup,112877,35,8,"['bacon', 'celery seed', 'durkee onion', 'potato', 'water', 'milk', 'sauce', 'leaf parsley', 'pepper', 'celery', 'leaf']",674.3,66.0,14.0,35.0,43.0,85.0,16.0,['american']
+191,dried mushroom soup,4990,0,6,"['durkee onion', 'celery seed', 'morel', 'wheat flour', 'water', 'milk', 'chicken bouillon cube', 'pepper', 'seasoning salt']",795.9,31.0,510.0,53.0,40.0,63.0,45.0,['american']
+192,louisiana hayride kitchen bean soup,196051,280,8,"['bean', 'water', 'ham', 'durkee onion', 'celery seed', 'garlic salt', 'vegetable oil', 'leaf parsley', 'salt', 'pepper']",316.7,16.0,8.0,21.0,37.0,9.0,12.0,['american']
+193,macaroni   n cheese soup,36329,55,7,"['cheese dinner mix', 'broccoli', 'durkee onion', 'water', 'milk', 'cheddar cheese soup', 'ham', 'pepper']",440.5,21.0,29.0,38.0,43.0,35.0,18.0,['american']
+194,schnitzel eierkuchen  pa dutch ham   bacon omelet,48525,30,8,"['bacon', 'ham', 'durkee onion', 'egg', 'milk', 'pepper']",300.5,33.0,13.0,33.0,34.0,36.0,2.0,['american']
+195,olive garden copycat zuppa toscana,38298,60,8,"['sausage', 'russet potato', 'durkee onion', 'bacon', 'accent seasoning', 'salt', 'pepper', 'pepper flake', 'garlic', 'kale', 'chicken broth', 'water', 'wheat flour', 'whipping cream']",840.4,88.0,17.0,94.0,67.0,130.0,15.0,['italian']
+196,italian sausage in red sauce,87416,130,4,"['sausage', 'garlic', 'pepper', 'durkee onion']",401.7,47.0,8.0,57.0,44.0,54.0,2.0,-
+197,sausage  pepper and potato skillet,181994,35,5,"['sausage', 'durkee onion', 'pepper', 'pepper', 'potato', 'water', 'pepper']",521.8,48.0,26.0,58.0,50.0,55.0,11.0,-
+198,sausage rice skillet,383577,35,5,"['rice-a-roni', 'sausage', 'durkee onion', 'pepper', 'water']",572.5,75.0,7.0,62.0,49.0,88.0,2.0,-
+199,vegetarian tuscan soup,342878,75,7,"['panir', 'ghee', 'durkee onion', 'seasoning salt', 'fennel seed', 'pepper flake', 'garlic', 'russet potato', 'kale', 'chicken broth', 'water', 'whipping cream', 'tomato', 'parmesan cheese']",309.0,31.0,11.0,37.0,21.0,60.0,7.0,-
+200,garden mint jelly with a hint of garlic,314391,14,9,"['mint', 'vinegar', 'sugar', 'certo', 'garlic', 'chili pepper flake']",1792.4,2.0,1210.0,16.0,7.0,1.0,154.0,['scottish']
+201,wato s chilli sauce,33056,50,10,"['chili pepper', 'vinegar', 'sugar', 'ginger', 'sultana', 'salt', 'garlic']",3764.5,4.0,3349.0,295.0,38.0,4.0,312.0,['australian']
+202,fruit chutney  zwt   south africa,173818,150,12,"['sugar', 'pear', 'apricot', 'date', 'apple ring', 'sultana', 'durkee onion', 'water', 'garlic', 'cider vinegar', 'chili powder', 'turmeric', 'nutmeg', 'ginger']",4935.6,9.0,4469.0,21.0,59.0,5.0,423.0,-
+203,never fail syrup,349919,25,6,"['sugar', 'sugar', 'white karo', 'water', 'salt', 'maple flavoring', 'butter flavoring']",2578.4,1.0,2011.0,12.0,0.0,0.0,225.0,-
+204,nome rhubarb and onion relish,27424,90,4,"['rhubarb', 'vinegar', 'durkee onion', 'sugar', 'celery', 'salt', 'pepper', 'cinnamon', 'clove']",3913.9,3.0,3655.0,110.0,26.0,3.0,325.0,-
+205,five lentil stew  panch dal,137217,75,15,"['dal', 'urad dal', 'dal', 'toor dal', 'mung bean sprout', 'water', 'turmeric', 'cayenne pepper', 'oil', 'durkee onion', 'garlic', 'cumin', 'garam masala', 'tomato', 'salt']",282.2,8.0,24.0,25.0,32.0,3.0,14.0,['indian']
+206,masala chicken,97326,65,13,"['chicken meat', 'water', 'durkee onion', 'cardamom', 'clove', 'cinnamon candy', 'oil', 'salt', 'garam masala', 'pepper', 'chily', 'cilantro leave', 'ginger', 'garlic']",424.6,45.0,15.0,4.0,59.0,37.0,2.0,['indian']
+207,moglai murg  mugul style chicken,446611,90,12,"['chicken meat', 'ghee', 'ginger', 'garam masala', 'pepper', 'turmeric', 'saffron', 'durkee onion', 'garlic', 'salt', 'water', 'milk', 'almond']",511.0,51.0,91.0,54.0,52.0,66.0,9.0,['indian']
+208,pakistani punjabi karachi style yakhni pulao  chicken stock pila,331517,60,16,"['basmati rice', 'chicken meat', 'water', 'salt', 'durkee onion', 'clove', 'peppercorn', 'cardamom pod', 'cinnamon candy', 'leaf', 'garlic', 'ginger', 'coriander seed', 'nutmeg', 'anise seed', 'oil', 'cumin', 'garlic', 'tomato', 'yogurt', 'chili powder', 'cumin powder', 'garam masala', 'cardamom', 'ground aniseed', 'mint leaf']",375.9,26.0,7.0,26.0,30.0,19.0,13.0,['indian']
+209,vij familys chicken curry   my version,268670,85,17,"['canola oil', 'durkee onion', 'cinnamon candy', 'garlic', 'ginger', 'tomato', 'salt', 'pepper', 'turmeric', 'cumin', 'garam masala', 'cayenne pepper', 'chicken meat', 'cream', 'water', 'ground cilantro']",438.6,47.0,16.0,53.0,56.0,46.0,4.0,['indian']
+210,pickled pork   alton brown,337996,4320,10,"['mustard seed', 'celery seed', 'leaf', 'peppercorn', 'sauce', 'cider vinegar', 'sugar', 'salt', 'garlic', 'water', 'ice', 'pork butt']",303.1,29.0,18.0,204.0,45.0,31.0,2.0,['american']
+211,pork sticks aka pig on a stick,9464,110,8,"['pork butt', 'garlic', 'beer', 'sauce', 'bamboo skewer', 'salt', 'wheat flour', 'breadcrumb', 'egg', 'vegetable oil']",973.3,87.0,9.0,61.0,143.0,97.0,11.0,['american']
+212,american sirloin steaks,291758,11,7,"['sauce', 'vinegar', 'garlic', 'salt', 'pepper', 'sirloin steak']",710.4,66.0,9.0,53.0,138.0,87.0,1.0,-
+213,kurt busch s grilled t bone,156835,15,7,"['sauce', 'vinegar', 'garlic', 'pepper', 'salt', 'sirloin steak']",774.5,80.0,9.0,53.0,130.0,99.0,1.0,-
+214,marinated boned leg of lamb,20916,135,7,"['durkee onion', 'oil', 'vinegar', 'peppercorn', 'salt', 'oregano', 'leaf', 'garlic', 'lamb']",1162.1,135.0,3.0,26.0,169.0,150.0,0.0,-
+215,baby ruth cookies,182449,25,10,"['butter', 'sugar', 'egg', 'vanilla extract', 'purpose flour', 'baking soda', 'salt', 'butterfinger candy bar']",1754.3,127.0,575.0,82.0,41.0,248.0,79.0,-
+216,chocolate lace cookies,203755,70,13,"['butter', 'sugar', 'cocoa powder', 'baking soda', 'salt', 'vanilla extract', 'egg', 'purpose flour', 'walnut', 'chocolate chip cookie']",1286.5,100.0,460.0,45.0,35.0,161.0,57.0,-
+217,nutty or nice chocolate chip cookies,148032,26,10,"['purpose flour', 'baking soda', 'salt', 'butter', 'sugar', 'sugar', 'egg', 'vanilla extract', 'chocolate chip cookie', 'walnut']",1484.7,111.0,570.0,43.0,31.0,216.0,69.0,-
+218,pioneer picnic cookies,86991,70,10,"['butter', 'sugar', 'egg', 'baking soda', 'chocolate chip cookie', 'butter flavor shortening', 'sugar', 'vanilla extract', 'purpose flour', 'salt', 'walnut']",1389.7,125.0,403.0,20.0,32.0,155.0,53.0,-
+219,reese s premier peanut butter and chocolate cookies,230010,22,13,"['butter', 'butter flavor shortening', 'sugar', 'sugar', 'egg', 'vanilla extract', 'purpose flour', 'baking soda', 'salt', 'reeses piece']",1276.8,105.0,409.0,40.0,36.0,173.0,50.0,-
+220,big daddy biscuits,467517,45,11,"['purpose flour', 'baking powder', 'salt', 'sugar', 'butter', 'milk']",207.5,16.0,5.0,19.0,7.0,32.0,8.0,-
+221,easy bake oven jeweled teacakes,147453,25,8,"['purpose flour', 'baking powder', 'salt', 'sugar', 'butter', 'milk', 'sprinkle']",113.5,6.0,16.0,9.0,3.0,13.0,5.0,-
+222,mock angel food cake,194285,60,10,"['purpose flour', 'sugar', 'baking powder', 'salt', 'milk', 'egg white']",133.5,1.0,75.0,5.0,5.0,2.0,9.0,-
+223,pop up rolls,272180,25,5,"['purpose flour', 'baking powder', 'salt', 'milk', 'sugar', 'butter']",122.6,4.0,17.0,12.0,5.0,8.0,7.0,-
+224,simple sweet scones,66409,30,11,"['purpose flour', 'baking powder', 'salt', 'butter', 'sugar', 'milk']",188.1,12.0,16.0,8.0,6.0,26.0,8.0,-
+225,carolyn s ham stew,222975,105,3,"['ham', 'bean', 'durkee onion', 'water', 'potato', 'salt', 'pepper']",470.3,36.0,17.0,59.0,47.0,41.0,13.0,['american']
+226,fried squash,472752,30,3,"['summer squash', 'durkee onion', 'salt', 'pepper', 'water', 'butter']",118.1,14.0,22.0,28.0,4.0,28.0,2.0,['american']
+227,karl s favorite cucumbers,17600,5,4,"['cucumber', 'durkee onion', 'cider vinegar', 'water', 'salt', 'pepper']",40.6,0.0,15.0,24.0,2.0,0.0,2.0,['american']
+228,santa fe red chile sauce,253132,15,2,"['tomato', 'durkee onion', 'chili powder', 'water', 'salt', 'pepper']",69.0,3.0,22.0,44.0,5.0,1.0,4.0,['american']
+229,pea and ham soup,174623,65,5,"['water', 'pea', 'durkee onion', 'baby carrot', 'garlic', 'salt', 'pepper', 'pea', 'ham']",266.7,4.0,31.0,20.0,44.0,3.0,13.0,-
+230,chiang mai curry noodles  kao soi,192829,30,11,"['vegetable oil', 'garlic', 'curry paste', 'chicken meat', 'coconut milk powder', 'chicken broth', 'turmeric', 'soy sauce', 'sugar', 'salt', 'lime juice concentrate', 'spaghetti noodle', 'shallot', 'ground cilantro', 'durkee onion']",738.9,81.0,5.0,45.0,41.0,103.0,16.0,['thai']
+231,thai style grilled   baked chicken,150194,50,10,"['chicken meat', 'lime', 'lemongrass', 'ginger', 'garlic', 'palm sugar', 'coconut milk powder', 'seafood cocktail sauce', 'soy sauce', 'shallot']",555.9,58.0,13.0,56.0,83.0,73.0,4.0,['thai']
+232,caramel chicken,116532,85,16,"['sugar', 'water', 'chicken broth', 'seafood cocktail sauce', 'soy sauce', 'chicken meat', 'salt', 'vegetable oil', 'ginger', 'garlic', 'durkee onion', 'jalapeno pepper', 'durkee onion', 'mint', 'ground cilantro', 'leaf basil']",821.1,69.0,207.0,96.0,92.0,56.0,19.0,-
+233,drunken lemongrass shrimp,31514,20,14,"['shrimp', 'sherry', 'cornstarch', 'salt', 'vegetable oil', 'shallot', 'chili pepper', 'lemongrass', 'garlic', 'ground cilantro', 'lime', 'soy sauce', 'oyster sauce', 'seafood cocktail sauce', 'sugar']",151.9,6.0,4.0,60.0,27.0,2.0,3.0,-
+234,lemongrass whole roasted chicken,385704,90,20,"['lemongrass', 'shallot', 'garlic', 'soy sauce', 'sugar', 'seafood cocktail sauce', 'chili pepper flake', 'sea salt', 'chicken meat', 'ground cilantro', 'vegetable oil', 'garlic', 'chily', 'lime juice concentrate', 'water']",918.4,97.0,66.0,139.0,124.0,82.0,7.0,-
+235,charles anderson s persimmon salsa,192875,15,2,"['persimmon pulp', 'garlic', 'paprika', 'ground cilantro', 'sugar', 'pepper', 'durkee onion', 'salt']",60.9,0.0,59.0,1.0,0.0,0.0,5.0,-
+236,goat cheese appetizer,193569,20,3,"['leaf basil', 'pepper', 'bell pepper', 'leaf basil', 'baguette']",216.0,3.0,0.0,19.0,14.0,2.0,13.0,-
+237,mango black bean salsa,230800,10,2,"['bean', 'mango', 'tomatillo', 'durkee onion', 'lime juice concentrate', 'ground cilantro', 'pepper']",67.4,0.0,23.0,6.0,5.0,0.0,4.0,-
+238,mexican mango salsa,224805,10,2,"['tomato', 'mango', 'ground cilantro', 'durkee onion', 'garlic', 'pepper', 'chili pepper', 'lime juice concentrate']",48.2,0.0,33.0,0.0,2.0,0.0,3.0,-
+239,pepper onion relish,124053,60,5,"['bell pepper', 'chili pepper', 'durkee onion', 'cider vinegar', 'sugar', 'salt', 'oregano', 'pepper']",135.8,0.0,92.0,48.0,2.0,0.0,9.0,-
+240,chef joey s organic hemp milk,391154,6,11,"['hemp seed', 'water', 'vanilla extract', 'honey']",12.7,0.0,9.0,0.0,0.0,0.0,0.0,-
+241,cranberry wheat free muffins,216742,40,7,"['almond flour', 'baking soda', 'salt', 'cinnamon', 'cranberry', 'vanilla extract', 'honey', 'egg']",203.3,5.0,146.0,14.0,10.0,5.0,13.0,-
+242,gluten free blueberry muffins,436330,35,8,"['rice flour', 'baking soda', 'baking powder', 'salt', 'cinnamon', 'honey', 'vegetable oil', 'milk', 'vanilla extract', 'egg', 'blueberry']",249.8,13.0,55.0,5.0,8.0,7.0,13.0,-
+243,honey pecan pancakes,356982,5,4,"['almond meal', 'egg', 'vanilla extract', 'cinnamon', 'honey', 'pecan piece']",487.1,59.0,47.0,4.0,40.0,23.0,6.0,-
+244,low carb pancakes   no soy,344863,6,5,"['almond meal', 'egg', 'vanilla extract', 'cinnamon', 'berry']",257.3,32.0,7.0,2.0,26.0,13.0,2.0,-
+245,succulent chicken cordon bleu,162131,60,17,"['chicken breast', 'ham', 'cheese', 'purpose flour', 'honey mustard', 'style breadcrumb']",321.9,19.0,14.0,15.0,66.0,29.0,5.0,['mexican']
+246,tapenade filled palmiers,257768,105,20,"['pastry', 'tapenade']",33.7,3.0,0.0,0.0,0.0,2.0,0.0,['french']
+247,chicken cordon bleu pockets,231311,52,21,"['dough roll', 'cream', 'parmesan cheese', 'cheese', 'chicken breast', 'ham']",273.0,13.0,12.0,20.0,22.0,14.0,12.0,-
+248,chocolate chip cookie truffles,398034,34,25,"['chocolate chip cookie dough', 'cheese', 'chocolate morsel', 'vegetable shortening', 'toll house baking cocoa']",183.2,16.0,20.0,2.0,3.0,23.0,7.0,-
+249,weight watchers chicken cordon bleu,441547,55,17,"['vegetable oil cooking spray', 'chicken breast', 'ham', 'cheese', 'purpose flour', 'honey mustard', 'breadcrumb']",322.4,13.0,15.0,32.0,75.0,12.0,7.0,-
+250,ga pao  thai stir fried beef with basil leaves,500758,15,12,"['ground beef', 'garlic', 'durkee onion', 'paprika', 'pepper', 'pepper', 'basil leave', 'egg', 'pepper', 'vegetable oil', 'grain rice', 'seafood cocktail sauce', 'oyster sauce', 'sugar', 'chili pepper']",1050.4,49.0,43.0,74.0,87.0,50.0,48.0,['thai']
+251,thai pineapple shrimp fried rice,466093,25,11,"['vegetable oil', 'shrimp', 'bell pepper', 'durkee onion', 'garlic', 'chili pepper', 'egg', 'grain rice', 'seafood cocktail sauce', 'soy sauce', 'lime juice concentrate', 'pineapple chunk', 'cash', 'cilantro']",498.1,34.0,44.0,79.0,52.0,19.0,16.0,['thai']
+252,thai shrimp fried rice,504441,25,19,"['grain rice', 'shrimp', 'garlic', 'chili pepper', 'egg', 'durkee onion', 'baby carrot', 'ground cilantro', 'pepper', 'vegetable oil', 'lime juice concentrate', 'seafood cocktail sauce', 'soy sauce', 'sugar']",763.7,36.0,27.0,97.0,31.0,18.0,40.0,['thai']
+253,thai spring rolls  pa pia,29243,16,14,"['vegetable oil', 'garlic', 'ground cilantro', 'crabmeat', 'ground pork', 'egg', 'baby carrot', 'durkee onion', 'seafood cocktail sauce', 'pepper', 'sugar', 'salt', 'cellophane noodle', 'egg roll wraps', 'jumbo egg', 'water']",833.4,45.0,12.0,81.0,82.0,40.0,32.0,['thai']
+254,thai style fried rice    with a curry flavor  hmmm,281522,50,11,"['jasmine rice', 'peanut butter', 'durkee onion', 'chili pepper', 'fresh green chile', 'curry paste', 'curry powder', 'pork loin chop', 'garlic', 'shrimp', 'egg', 'pepper', 'soy sauce', 'seafood cocktail sauce', 'durkee onion', 'ground cilantro']",935.0,28.0,15.0,36.0,56.0,21.0,53.0,['thai']
+255,finnan haddie,235433,45,9,"['haddie', 'butter', 'wheat flour', 'milk', 'salt', 'pepper']",313.4,24.0,0.0,42.0,64.0,47.0,2.0,-
+256,grandmother kirkwood s white sauce,160402,20,6,"['butter', 'wheat flour', 'milk', 'salt', 'pepper']",416.7,49.0,0.0,36.0,19.0,100.0,7.0,-
+257,noreen s chicken,87595,55,7,"['chicken breast', 'bacon', 'butter', 'wheat flour', 'milk', 'salt', 'parmesan cheese']",552.3,57.0,0.0,47.0,83.0,83.0,3.0,-
+258,rotini and cheese,33760,25,8,"['rotini pasta', 'butter', 'wheat flour', 'salt', 'pepper', 'garlic', 'milk', 'cheese', 'parmesan cheese', 'lemon juice concentrate']",885.0,52.0,14.0,45.0,71.0,102.0,36.0,-
+259,tomato dumplings,134514,40,8,"['tomato', 'durkee onion', 'salt', 'pepper', 'butter', 'wheat flour', 'milk']",328.1,8.0,26.0,2.0,20.0,15.0,19.0,-
+260,beginner s curry,201347,50,10,"['vegetable oil', 'durkee onion', 'garlic', 'salt', 'curry powder', 'coconut milk powder', 'tomato', 'tomato paste', 'chicken breast', 'spinach', 'grain rice']",508.6,40.0,22.0,26.0,58.0,71.0,13.0,-
+261,chicken  or beef  satay,423309,30,11,"['chicken breast', 'durkee onion', 'garlic', 'gingerroot', 'soy sauce', 'chili powder', 'coriander', 'sugar', 'lemon juice concentrate', 'vegetable oil', 'coconut milk powder', 'peanut butter', 'seafood cocktail sauce', 'salt', 'pepper']",494.8,49.0,44.0,45.0,73.0,85.0,6.0,-
+262,this goat is a real jerk,161405,105,8,"['goat stew meat', 'durkee onion', 'garlic', 'lemon juice concentrate', 'thyme sprigs', 'curry paste', 'pepper', 'salt', 'scotch bonnet pepper', 'vegetable oil', 'chayote', 'water', 'grain rice', 'coconut milk powder']",685.2,47.0,38.0,28.0,20.0,94.0,31.0,-
+263,ww 8 points   thai coconut chicken,252714,30,12,"['canola oil', 'chicken breast', 'salt', 'durkee onion', 'garlic', 'ginger', 'sugar', 'curry paste', 'cumin', 'asparagus', 'coconut milk powder', 'seafood cocktail sauce', 'leaf basil', 'grain rice']",352.5,16.0,21.0,24.0,62.0,30.0,11.0,-
+264,french peasant bread,400438,205,11,"['yeast', 'water', 'sugar', 'salt', 'wheat flour', 'oil', 'cornmeal', 'butter']",244.6,1.0,6.0,24.0,15.0,0.0,16.0,-
+265,italian style rolls,246744,142,17,"['water', 'sugar', 'yeast', 'wheat flour', 'salt', 'butter']",237.1,5.0,9.0,13.0,12.0,9.0,14.0,-
+266,pizza hut or olive garden breadsticks,432923,75,14,"['water', 'butter', 'wheat flour', 'sugar', 'salt', 'yeast']",255.2,3.0,13.0,24.0,13.0,4.0,17.0,-
+267,soft pretzel,392555,16,15,"['yeast', 'water', 'sugar', 'salt', 'wheat flour', 'butter', 'salt']",161.5,6.0,4.0,13.0,8.0,12.0,8.0,-
+268,traditional white wheat bread,456334,180,15,"['yeast', 'sugar', 'water', 'butter', 'salt', 'wheat flour', 'wheat flour']",175.6,4.0,10.0,15.0,9.0,7.0,10.0,-
+269,alla checca,224184,15,3,"['tomato', 'garlic', 'leaf basil', 'oil', 'pepper']",272.3,42.0,16.0,0.0,3.0,19.0,2.0,-
+270,basil zucchini,356538,10,4,"['oil', 'zucchini', 'leaf basil', 'garlic', 'pepper']",41.9,4.0,9.0,0.0,3.0,2.0,1.0,-
+271,red pepper aioli,432619,10,8,"['garlic', 'pepper', 'mayonnaise', 'oil', 'pepper']",94.2,13.0,3.0,10.0,0.0,6.0,1.0,-
+272,red pepper garlic sauce,116513,15,2,"['pepper', 'garlic', 'mayonnaise', 'pepper']",134.5,15.0,17.0,8.0,2.0,7.0,3.0,-
+273,roasted red pepper sandwich spread,55294,65,4,"['pepper', 'mayonnaise', 'garlic', 'leaf basil', 'pepper', 'durkee onion']",31.0,3.0,2.0,2.0,0.0,1.0,0.0,-
+274,cheese stuffed shells,305573,60,12,"['jumbo pasta shell', 'curd cheese', 'mozzarella cheese', 'parmesan cheese', 'egg', 'garlic', 'oregano', 'leaf parsley', 'tomato pasta sauce']",584.5,33.0,45.0,56.0,74.0,55.0,19.0,['italian']
+275,eggplant meatballs,437923,30,18,"['eggplant', 'bread', 'egg', 'cheese', 'garlic', 'leaf parsley', 'bread', 'tomato sauce', 'oil']",767.3,100.0,33.0,25.0,30.0,66.0,11.0,['italian']
+276,italian breaded chicken breasts,217144,25,9,"['chicken breast', 'breadcrumb', 'cheese', 'leaf parsley', 'wheat flour', 'pepper', 'garlic', 'egg', 'oil']",418.1,23.0,7.0,20.0,70.0,20.0,10.0,['italian']
+277,layered pasta ricotta pie,125998,80,12,"['rice vermicelli', 'oil', 'durkee onion', 'garlic', 'cheese', 'egg', 'ricotta cheese', 'spinach', 'tomato pasta sauce']",387.3,31.0,29.0,24.0,43.0,50.0,9.0,['italian']
+278,oven baked mozzarella stuffed arancini,209083,75,16,"['grain rice', 'durkee onion', 'garlic', 'water', 'egg', 'leaf parsley', 'cheese', 'wheat breadcrumb', 'oil', 'pizza sauce']",300.7,10.0,47.0,29.0,19.0,10.0,16.0,['italian']
+279,old fashioned boston baked beans,288659,420,15,"['pea', 'durkee onion', 'molasses', 'tomato paste', 'ketchup', 'sugar', 'vinegar', 'salt', 'mustard', 'pepper', 'water', 'bacon']",232.6,6.0,67.0,37.0,17.0,6.0,14.0,['american']
+280,baked beans in clay pot,285953,724,16,"['navy bean', 'ketchup', 'mustard', 'sugar', 'salt', 'pepper', 'durkee onion', 'water', 'bacon']",333.2,21.0,33.0,43.0,27.0,22.0,13.0,-
+281,bourbon baked beans,411097,180,14,"['navy bean', 'water', 'bacon', 'durkee onion', 'tomato paste', 'molasses', 'mustard', 'ketchup', 'bourbon whiskey', 'sugar', 'salt', 'pepper']",426.9,12.0,159.0,43.0,29.0,12.0,21.0,-
+282,comfy baked beans,70748,360,16,"['pea', 'slab bacon', 'tomato', 'durkee onion', 'ketchup', 'molasses', 'sugar', 'mustard', 'salt', 'pepper']",476.4,15.0,196.0,50.0,25.0,15.0,29.0,-
+283,slow cooked homemade baked beans,371300,625,17,"['bacon', 'navy bean', 'ketchup', 'water', 'molasses', 'sugar', 'durkee onion', 'mustard', 'salt']",331.4,4.0,146.0,50.0,25.0,3.0,22.0,-
+284,arkansas breakfast casserole,86215,30,9,"['bacon', 'pepper', 'durkee onion', 'potato', 'cheddar cheese', 'egg', 'pepper']",501.9,42.0,12.0,20.0,43.0,52.0,13.0,-
+285,bacon  cheese and potato chowder,251214,50,7,"['nonfat milk', 'potato soup', 'potato', 'cheddar cheese', 'bacon', 'durkee onion']",322.5,26.0,32.0,34.0,24.0,32.0,9.0,-
+286,bacon and potato scramble,39642,15,9,"['bacon', 'potato', 'durkee onion', 'egg', 'cheddar cheese']",325.2,36.0,3.0,17.0,38.0,53.0,2.0,-
+287,mountain man breakfast,158969,50,10,"['bacon', 'durkee onion', 'potato', 'egg', 'pepper', 'cheddar cheese', 'chili salsa']",575.8,61.0,9.0,37.0,59.0,93.0,8.0,-
+288,scrambled egg pie,44292,55,4,"['egg', 'mushroom slice', 'durkee onion', 'bacon', 'cheddar cheese', 'pepper']",212.0,26.0,3.0,12.0,23.0,35.0,0.0,-
+289,1960 s catalina dressing,33561,15,5,"['ketchup', 'sugar', 'wine vinegar', 'durkee onion', 'paprika', 'sauce', 'salad oil', 'pepper']",619.1,83.0,131.0,14.0,1.0,37.0,11.0,-
+290,barbecue recipes beef marinade,294435,185,2,"['salad oil', 'vinegar', 'sauce', 'garlic salt', 'pepper', 'durkee onion']",1046.5,166.0,34.0,28.0,1.0,74.0,5.0,-
+291,brown sugar vinaigrette,110381,10,3,"['safflower oil', 'wine vinegar', 'sugar', 'mustard', 'garlic', 'pepper']",1342.8,223.0,53.0,2.0,0.0,45.0,4.0,-
+292,french antilles vinaigrette,372633,5,1,"['wine vinegar', 'pepper', 'sugar', 'mustard', 'olive oil']",1079.0,187.0,0.0,3.0,0.0,83.0,0.0,-
+293,peppy tomato dressing,40655,10,1,"['tomato', 'salad oil', 'wine vinegar', 'durkee onion', 'garlic', 'salt', 'pepper', 'celery seed']",1144.2,190.0,24.0,28.0,3.0,85.0,4.0,-
+294,arlene s veggie casserole,31285,60,8,"['shoepeg corn', 'bean', 'celery soup', 'pepper', 'durkee onion', 'celery seed', 'cream', 'cheddar cheese', 'ritz cracker', 'butter', 'pepper']",418.4,45.0,16.0,36.0,16.0,78.0,11.0,-
+295,aunt bette s casserole,405806,75,9,"['corn', 'bean', 'celery soup', 'durkee onion', 'cheddar cheese', 'ritz cracker', 'almond', 'cream', 'butter']",587.3,76.0,20.0,38.0,30.0,129.0,8.0,-
+296,auntie goldie mae s shoe peg casserole,255508,40,8,"['shoe peg corn', 'bean', 'cheddar cheese', 'celery soup', 'garlic', 'cream', 'seasoning salt', 'ritz cracker', 'butter']",679.1,80.0,24.0,69.0,31.0,149.0,14.0,-
+297,holiday vegetable casserole,338074,55,4,"['bean', 'shoepeg corn', 'durkee onion', 'egg', 'cream', 'celery soup', 'cheddar cheese', 'ritz cracker', 'butter']",360.4,41.0,9.0,23.0,26.0,78.0,6.0,-
+298,mimi s vegetable casserole,31762,80,6,"['bean', 'shoe peg corn', 'pimientos', 'celery soup', 'cheddar cheese', 'durkee onion', 'cream', 'ritz cracker', 'almond', 'butter']",601.7,56.0,34.0,51.0,31.0,75.0,18.0,-
+299,dino s deviled eggs,24187,22,8,"['egg', 'mayonnaise', 'mustard', 'lemon juice concentrate', 'sauce', 'pepper', 'paprika']",36.1,3.0,0.0,1.0,6.0,3.0,0.0,['american']
+300,oprah winfrey s deviled eggs,63750,30,7,"['egg', 'mayonnaise', 'mustard', 'butter pickle', 'sauce', 'pepper', 'lemon juice concentrate', 'horseradish', 'tabasco jalapeno sauce', 'leaf parsley', 'paprika']",45.8,4.0,1.0,2.0,6.0,4.0,0.0,['american']
+301,phillips crab cakes,56190,20,4,"['crabmeat', 'egg', 'sauce', 'mustard', 'mayonnaise', 'lemon juice concentrate', 'mustard', 'butter', 'parsley flake', 'bay seasoning', 'breadcrumb']",163.3,9.0,5.0,33.0,34.0,10.0,2.0,['american']
+302,sadie s shrimp salad dressing,6515,60,6,"['macaroni', 'shrimp', 'egg', 'durkee onion', 'celery seed', 'olive', 'butter pickle', 'mayonnaise', 'oil', 'sauce', 'lemon juice concentrate', 'sauce', 'mustard', 'ketchup']",267.9,15.0,8.0,24.0,35.0,10.0,8.0,['american']
+303,sardine pate or sandwich spread,189379,15,5,"['oil', 'mayonnaise', 'durkee onion', 'mustard', 'lemon juice concentrate', 'pepper', 'leaf parsley']",454.5,42.0,7.0,43.0,85.0,18.0,2.0,['american']
+304,amish peanut butter,536322,45,7,"['sugar', 'water', 'corn syrup', 'maple syrup', 'peanut butter', 'marshmallow creme']",253.5,16.0,107.0,4.0,11.0,11.0,12.0,['american']
+305,chocolate dipped peanut butter horns,115986,20,3,"['peanut butter', 'flavor snack', 'candy coating']",10.5,1.0,0.0,0.0,0.0,0.0,0.0,['american']
+306,fluffer nutter sandwich,18910,5,5,"['bread', 'marshmallow creme', 'peanut butter']",410.8,27.0,72.0,17.0,24.0,18.0,17.0,['american']
+307,maple syrup candy,31640,30,5,"['maple syrup', 'candy mold']",105.0,0.0,95.0,0.0,0.0,0.0,9.0,['american']
+308,the ultimate pb j sandwich,61596,8,6,"['cinnamon raisin bread', 'strawberry jelly', 'peanut butter']",292.4,15.0,60.0,11.0,16.0,11.0,15.0,['american']
+309,fast  easy  delicious macaroni salad   even your kids will love,457303,25,11,"['wheat elbow macaroni', 'butter pickle', 'olive', 'durkee onion', 'mayonnaise', 'mustard', 'salt', 'pepper', 'cheddar cheese']",527.2,26.0,22.0,17.0,24.0,13.0,26.0,-
+310,lola richard s easy potato salad,376201,35,6,"['potato', 'egg', 'durkee onion', 'butter pickle', 'mayonnaise', 'mustard', 'pepper']",282.8,17.0,18.0,12.0,15.0,10.0,13.0,-
+311,mc donalds big mac sauce,388706,7,1,"['mayonnaise', 'butter pickle', 'dress', 'sugar', 'pepper', 'durkee onion']",33.5,4.0,3.0,2.0,0.0,2.0,0.0,-
+312,mustard potato salad,515372,40,5,"['potato', 'durkee onion', 'butter pickle', 'mayonnaise', 'mustard', 'pepper']",458.9,31.0,26.0,37.0,14.0,15.0,21.0,-
+313,pickle sauce  michael smith,409358,10,2,"['butter pickle', 'baby dill pickle', 'durkee onion', 'mustard', 'mayonnaise', 'lemon', 'pepper']",124.1,15.0,12.0,27.0,1.0,7.0,2.0,-
+314,fancy chicken tenderloins,172792,17,7,"['chicken breast halve', 'garlic', 'egg', 'breadcrumb', 'butter', 'oil']",417.9,26.0,10.0,20.0,67.0,23.0,9.0,-
+315,macadamia nut chicken breasts with tropical marmalade,455903,80,15,"['chicken breast', 'meat marinade', 'macadamia nut', 'breadcrumb', 'purpose flour', 'egg', 'oil', 'butter', 'marmalade', 'soy sauce', 'sugar', 'mirin', 'oil', 'garlic', 'ginger', 'pineapple chunk', 'papayas', 'gooseberry', 'sugar', 'horseradish', 'mint']",750.9,65.0,117.0,66.0,82.0,48.0,17.0,-
+316,mar far chicken,88174,40,4,"['sugar', 'soy sauce', 'bean curd', 'ginger', 'garlic', 'egg', 'chicken meat', 'wheat flour', 'oil']",408.5,35.0,69.0,60.0,62.0,31.0,6.0,-
+317,maui fried chicken wings,167943,30,6,"['chicken wing', 'macadamia nut', 'breadcrumb', 'purpose flour', 'egg', 'oil', 'butter', 'soy sauce', 'sugar', 'mirin', 'oil', 'garlic', 'ginger']",1165.1,131.0,34.0,103.0,121.0,100.0,13.0,-
+318,stuffed hamburgers,194168,20,5,"['ground beef', 'breadcrumb', 'durkee onion', 'egg', 'sugar', 'soy sauce', 'water', 'garlic', 'm.s.g.', 'ginger']",326.3,29.0,22.0,28.0,50.0,36.0,4.0,-
+319,jim dandy s sausage and cheese grits casserole,396308,75,20,"['sausage', 'water', 'salt', 'cooking grit', 'cheddar cheese', 'butter', 'milk', 'egg', 'pepper']",507.3,59.0,1.0,41.0,44.0,92.0,5.0,['american']
+320,mamaw s good ol  biscuits and sausage gravy,473885,60,15,"['shortening', 'wheat flour', 'milk', 'sausage', 'sausage dripping', 'purpose flour', 'sauce', 'pepper']",539.7,44.0,0.0,45.0,43.0,53.0,15.0,['american']
+321,mean chef s southern fried chicken and gravy,69381,45,30,"['water', 'salt', 'fryer chicken', 'pepper', 'purpose flour', 'vegetable oil', 'bacon dripping', 'milk']",1673.5,227.0,0.0,118.0,100.0,133.0,11.0,['american']
+322,otoro s ultimate sausage gravy,362269,15,11,"['sausage', 'durkee onion', 'purpose flour', 'milk', 'habanero sauce', 'pepper']",556.0,61.0,3.0,39.0,59.0,76.0,5.0,['american']
+323,southern cajun sausage gravy,503630,30,11,"['sausage', 'sausage', 'purpose flour', 'milk', 'chicken broth', 'thyme sprigs', 'salt', 'pepper', 'buttermilk biscuit']",418.2,38.0,17.0,51.0,35.0,46.0,10.0,['american']
+324,fresh mango bread,77430,80,7,"['purpose flour', 'cinnamon', 'baking soda', 'salt', 'sugar', 'egg', 'vegetable oil', 'mango', 'lemon juice concentrate', 'raisin']",182.1,13.0,55.0,7.0,4.0,6.0,8.0,-
+325,mango bread  lower cal,254705,65,7,"['purpose flour', 'baking soda', 'baking powder', 'cinnamon', 'egg substitute', 'balance butter spread', 'sugar', 'mango']",75.7,2.0,35.0,4.0,2.0,2.0,4.0,-
+326,mango bread the panama way,456867,85,6,"['wheat flour', 'baking soda', 'salt', 'cinnamon', 'sugar', 'egg', 'canola oil', 'vanilla', 'macadamia nut', 'raisin', 'mango', 'coconut']",472.9,35.0,138.0,20.0,13.0,16.0,20.0,-
+327,oatmeal cinnamon muffins,111327,41,9,"['oatmeal', 'buttermilk', 'egg', 'sugar', 'canola oil', 'purpose flour', 'baking powder', 'baking soda', 'cinnamon']",229.6,13.0,59.0,7.0,9.0,5.0,11.0,-
+328,twisted cookies,48138,25,9,"['sugar', 'cinnamon', 'egg', 'sugar', 'canola oil', 'baking powder', 'purpose flour']",71.2,4.0,21.0,0.0,1.0,1.0,3.0,-
+329,buttermilk coffee cake,450418,55,14,"['purpose flour', 'sugar', 'salt', 'butter', 'baking powder', 'baking soda', 'cinnamon', 'nutmeg', 'egg', 'buttermilk', 'nut']",209.1,11.0,75.0,9.0,6.0,23.0,10.0,['american']
+330,cinnamon buttermilk muffins,461647,30,20,"['butter', 'sugar', 'egg', 'purpose flour', 'baking powder', 'baking soda', 'salt', 'nutmeg', 'buttermilk', 'vanilla extract', 'cinnamon']",356.2,27.0,121.0,11.0,7.0,54.0,15.0,['american']
+331,country cookies  oatmeal blueberry,178935,20,7,"['sugar', 'blueberry', 'shortening', 'egg', 'oat', 'buttermilk', 'wheat flour', 'baking soda', 'baking powder', 'salt', 'cinnamon', 'nutmeg', 'nutmeat']",154.8,11.0,39.0,5.0,5.0,8.0,6.0,['american']
+332,fastnachts  pennsylvania dutch,19021,30,13,"['potato', 'egg', 'sugar', 'buttermilk', 'butter', 'purpose flour', 'baking powder', 'baking soda', 'salt', 'nutmeg']",485.3,10.0,99.0,30.0,25.0,16.0,30.0,['american']
+333,blueberry biscuits  boberry,148515,30,12,"['purpose flour', 'sugar', 'baking powder', 'lemon peel', 'salt', 'baking soda', 'shortening', 'egg', 'buttermilk', 'blueberry', 'butter', 'cinnamon', 'nutmeg']",150.9,9.0,37.0,8.0,4.0,11.0,7.0,-
+334,june s addiction  cucumber sandwich,142463,5,3,"['bread', 'mayonnaise', 'tomato', 'cucumber', 'pepper']",96.9,1.0,12.0,8.0,6.0,1.0,6.0,['american']
+335,tomato and mint chutney,32443,20,4,"['tomato', 'mint', 'lemon juice concentrate', 'chili sauce', 'pepper']",17.7,0.0,9.0,0.0,1.0,0.0,1.0,['indian']
+336,cold corn salad,93405,10,3,"['shoepeg corn', 'tomato', 'durkee onion', 'mayonnaise', 'pepper']",22.3,2.0,4.0,1.0,0.0,1.0,0.0,-
+337,mediterranean chicken cracker topper,356642,70,5,"['chicken breast', 'pepper', 'mayonnaise', 'durkee onion', 'tomato', 'seasoning salt', 'cracker']",23.5,2.0,1.0,1.0,2.0,1.0,0.0,-
+338,tomatoes in mayonnaise,237133,5,4,"['tomato', 'mayonnaise', 'pepper']",89.7,8.0,22.0,4.0,3.0,3.0,3.0,-
+339,belgian cheese croquettes,425611,35,18,"['butter', 'wheat flour', 'milk', 'pepper', 'nutmeg', 'jumbo egg', 'cheese', 'egg', 'breadcrumb', 'oil']",866.5,81.0,13.0,24.0,88.0,157.0,17.0,-
+340,cheesy chicken stuffed shells,85111,95,12,"['chicken breast', 'jumbo pasta shell', 'butter', 'wheat flour', 'milk', 'salt', 'pepper', 'parmesan cheese', 'egg', 'ricotta cheese', 'leaf parsley', 'mozzarella cheese', 'pizza sauce']",659.5,69.0,18.0,42.0,87.0,128.0,6.0,-
+341,five cheese stuffed chicken breasts,102020,45,14,"['chicken breast', 'cheese', 'mozzarella cheese', 'ricotta cheese', 'parmesan cheese', 'egg', 'breadcrumb', 'seasoning salt', 'pepper', 'cheddar cheese', 'cream', 'chicken broth']",673.1,57.0,11.0,38.0,114.0,106.0,8.0,-
+342,oven fried parmesan chicken,301954,60,8,"['chicken breast', 'egg', 'milk', 'parmesan cheese', 'breadcrumb', 'butter']",365.1,33.0,1.0,12.0,73.0,41.0,1.0,-
+343,quick   easy chicken parmigiana,111444,45,9,"['chicken breast', 'breadcrumb', 'parmesan cheese', 'egg', 'butter', 'tomato pasta sauce', 'mozzarella cheese']",560.3,49.0,24.0,42.0,91.0,71.0,6.0,-
+344,basic high altitude french bread for welbilt breadmaker,236964,250,7,"['yeast', 'sugar', 'salt', 'butter', 'water', 'wheat flour']",121.7,1.0,2.0,12.0,6.0,1.0,8.0,-
+345,bread machine brown bread,184309,185,2,"['water', 'milk', 'salt', 'molasses', 'oat', 'wheat flour', 'butter', 'yeast']",158.0,4.0,18.0,10.0,7.0,8.0,9.0,-
+346,healthy steamed buns   mantou,212382,50,11,"['yeast', 'wheat flour', 'wheat flour', 'oat', 'water']",163.9,1.0,0.0,0.0,12.0,0.0,11.0,-
+347,oatmeal bread,23926,160,12,"['water', 'oat', 'yeast', 'water', 'molasses', 'salt', 'butter', 'wheat flour']",131.8,1.0,16.0,12.0,6.0,1.0,9.0,-
+348,whole grain swedish rye bread,206578,270,11,"['honey', 'molasses', 'salt', 'butter', 'caraway seed', 'water', 'yeast', 'water', 'wheat flour', 'wheat flour']",123.0,2.0,20.0,0.0,7.0,3.0,8.0,-
+349,aunt claire s pul gol gi    bul gogi,410251,21,7,"['sirloin tip roast', 'soy sauce', 'sesame seed', 'sesame oil', 'durkee onion', 'sugar', 'sugar', 'garlic', 'budweiser beer', 'pepper']",164.5,6.0,80.0,84.0,9.0,3.0,8.0,['korean']
+350,bi bim bap,350414,60,17,"['grain rice', 'ground beef', 'baby carrot', 'kernel corn', 'spinach', 'zucchini', 'egg', 'soy sauce', 'sugar', 'sugar', 'garlic', 'sesame oil', 'pepper', 'pepper paste', 'sesame seed']",707.0,24.0,63.0,79.0,80.0,27.0,34.0,['korean']
+351,chop chae  korean mixed vegetables with beef and noodles,178663,60,17,"['shiitake mushroom', 'cellophane noodle', 'sesame oil', 'soy sauce', 'sugar', 'sesame seed', 'rice wine', 'garlic', 'pepper', 'sirloin beef', 'canola oil', 'cabbage', 'durkee onion', 'baby carrot', 'durkee onion', 'spinach']",266.0,18.0,19.0,8.0,5.0,7.0,12.0,['korean']
+352,korean style noodles with vegetables  chap chae,160813,30,9,"['bean thread noodle', 'tamari soy sauce', 'sesame oil', 'sugar', 'garlic', 'safflower oil', 'durkee onion', 'baby carrot', 'champignon mushroom', 'spinach', 'sesame seed', 'cayenne pepper']",327.3,21.0,53.0,2.0,6.0,8.0,16.0,['korean']
+353,sauteed spinach with sesame   korean,368901,18,11,"['sesame oil', 'garlic', 'spinach', 'sugar', 'soy sauce', 'sesame seed']",154.4,19.0,14.0,14.0,8.0,8.0,3.0,['korean']
+354,gringo chile con queso,36002,10,5,"['velveeta cheese', 'chile mix']",169.7,18.0,18.0,34.0,18.0,40.0,1.0,['american']
+355,rachael ray s cheesy  smashed  cauliflower,216244,20,8,"['head cauliflower', 'chicken broth', 'oil', 'boursin cheese', 'parmesan cheese', 'nutmeg']",103.3,9.0,12.0,13.0,12.0,8.0,2.0,['american']
+356,slow cooker creamy broccoli cheese soup,484006,195,5,"['chicken broth', 'milk', 'broccoli cut', 'durkee onion', 'pepper', 'velveeta cheese', 'potato']",233.1,14.0,36.0,25.0,30.0,27.0,8.0,['american']
+357,south beach cauliflower mash with chives,339923,20,9,"['head cauliflower', 'garlic', 'chicken broth', 'pepper', 'chive', 'light cream cheese']",38.9,1.0,7.0,2.0,7.0,1.0,1.0,['american']
+358,velvety vegetable cheese soup,283748,20,9,"['broccoli carrots cauliflower mix', 'chicken broth', 'velveeta cheese']",169.7,18.0,18.0,34.0,18.0,40.0,1.0,-
+359,2 ingerdient orange slushies,490759,2,2,"['juice', 'ice']",48.8,0.0,36.0,0.0,1.0,0.0,3.0,['american']
+360,arkansas avalanche,250192,2,2,"['goldschlager', 'lemonade mix', 'grenadine']",161.9,0.0,128.0,0.0,0.0,0.0,13.0,['american']
+361,orange you a peach,455226,5,2,"['peach juice', 'juice', 'ice']",162.4,0.0,20.0,0.0,2.0,0.0,13.0,['american']
+362,pepsi fizz,28462,2,4,"['diet cola', 'ice', 'vanilla liqueur']",68.2,0.0,66.0,0.0,0.0,0.0,5.0,['american']
+363,zero calorie lemon slushie,36331,5,5,"['lemonade mix', 'sugar substitute', 'water', 'ice']",14.6,0.0,12.0,0.0,0.0,0.0,1.0,['american']
+364,aimee s quick chicken  breasts,165242,35,4,"['chicken breast halve', 'mustard', 'teriyaki sauce', 'parmesan cheese', 'bacon bit']",241.6,14.0,11.0,54.0,66.0,17.0,1.0,-
+365,baked bbq chicken,456457,30,3,"['barbecue sauce', 'chicken breast halve']",272.1,7.0,48.0,25.0,75.0,5.0,5.0,-
+366,barbecued teriyaki chicken,153420,30,2,"['chicken breast halve', 'teriyaki sauce', 'wine', 'garlic', 'pepper']",219.0,11.0,12.0,41.0,61.0,10.0,1.0,-
+367,crock pot game hens,40660,730,5,"['game hen', 'dress']",334.1,36.0,0.0,3.0,57.0,32.0,0.0,-
+368,eric s easy grilled chicken,62480,25,5,"['dress', 'teriyaki sauce', 'garlic', 'chicken breast halve']",254.3,17.0,30.0,75.0,54.0,9.0,3.0,-
+369,apple pie in a bottle,29781,5,9,"['apple juice', 'vodka', 'vanilla schnapp', 'butterscotch schnapp', 'lemon juice concentrate', 'apple pie spice', 'cinnamon candy']",24.3,0.0,5.0,0.0,0.0,0.0,0.0,['american']
+370,cinnamon extract,153634,172800,5,"['cinnamon candy', 'vodka']",14.3,0.0,0.0,0.0,0.0,0.0,0.0,-
+371,cinnamon roasted apples,433643,30,7,"['sugar', 'lemon juice concentrate', 'gala apple', 'cinnamon candy']",148.5,0.0,129.0,0.0,1.0,0.0,13.0,-
+372,hpno tini,272670,5,3,"['hpnotiq liqueur', 'vodka', 'lemon juice concentrate']",69.4,0.0,0.0,0.0,0.0,0.0,0.0,-
+373,smirnoff lemon drop martini,423072,2,4,"['vodka', 'sec', 'lemon juice concentrate']",4.7,0.0,2.0,0.0,0.0,0.0,0.0,-
+374,thick coca cola bbq sauce,139093,50,2,"['cola', 'ketchup', 'vinegar', 'sauce', 'chili powder', 'salt']",137.5,0.0,122.0,73.0,3.0,0.0,11.0,['american']
+375,dr  pepper bbq chicken,65869,45,4,"['diet dr. pepper soda', 'oil', 'ketchup', 'vinegar', 'salt', 'paprika', 'pepper', 'chili powder', 'sauce', 'durkee onion']",256.5,28.0,72.0,56.0,2.0,12.0,7.0,-
+376,jennie s spinach salad dressing,63662,10,3,"['canola oil', 'ketchup', 'vinegar', 'sauce', 'sugar', 'salt', 'durkee onion']",305.4,41.0,61.0,17.0,0.0,9.0,5.0,-
+377,red chile salt   cilantro ketchup for french fries,56767,5,4,"['ketchup', 'ground cilantro', 'vinegar', 'salt', 'chili powder']",68.2,0.0,56.0,126.0,2.0,0.0,5.0,-
+378,sloppy joe for one,58738,10,4,"['tofu crumble', 'ketchup', 'mustard', 'sauce', 'vinegar', 'sugar', 'salt', 'durkee onion']",98.9,4.0,50.0,25.0,11.0,2.0,5.0,-
+379,bhugi dal   easy mung,95593,90,6,"['mung bean sprout', 'water', 'powder', 'amchur', 'cumin powder', 'chili powder', 'cumin', 'oil', 'salt', 'ground cilantro']",236.5,11.0,4.0,0.0,25.0,5.0,9.0,['indian']
+380,easy tasty murukku,297184,12,4,"['besan', 'rice flour', 'cumin powder', 'chili powder', 'salt', 'oil']",553.5,11.0,40.0,26.0,47.0,4.0,32.0,['indian']
+381,meethi lassi,62171,15,3,"['yogurt', 'sugar', 'cumin powder', 'salt', 'water']",303.6,12.0,196.0,4.0,17.0,25.0,16.0,['indian']
+382,tangy fish from south india,89220,45,7,"['halibut fillet', 'lime', 'salt', 'oil', 'mustard seed', 'fenugreek seed', 'curry leave', 'cumin powder', 'chili powder', 'tamarind pulp', 'water']",153.5,22.0,10.0,50.0,2.0,9.0,2.0,['indian']
+383,yellow maize flour and fenugreek leaves indian breads,112118,60,9,"['corn flour', 'salt', 'chili powder', 'cumin powder', 'fenugreek leave', 'chili pepper', 'water', 'oil']",4.7,0.0,2.0,0.0,0.0,0.0,0.0,['indian']
+384,paprika huhn  chicken in paprika sauce,486902,95,9,"['broiler', 'salt', 'pepper', 'butter', 'durkee onion', 'paprika', 'wheat flour', 'chicken stock', 'cream']",238.7,28.0,5.0,5.0,23.0,50.0,2.0,['german']
+385,chicken florentine soup,361621,30,10,"['butter', 'durkee onion', 'garlic', 'wheat flour', 'cayenne pepper', 'salt', 'pepper', 'chicken stock', 'chicken breast', 'spinach', 'cream']",499.3,54.0,19.0,20.0,49.0,97.0,6.0,-
+386,herb   garlic cream cheese chicken,106008,15,8,"['herb', 'cream', 'chicken breast', 'butter', 'wheat flour', 'salt', 'pepper']",473.6,38.0,0.0,14.0,107.0,73.0,1.0,-
+387,no fuss chicken,279947,50,8,"['wheat flour', 'salt', 'pepper', 'mustard', 'chicken breast', 'durkee onion', 'champignon mushroom', 'butter', 'soy sauce']",341.2,22.0,11.0,75.0,68.0,39.0,6.0,-
+388,pesce spada in padella alla senape,481716,22,8,"['swordfish', 'salt', 'pepper', 'lemon', 'stone ground mustard', 'wheat flour', 'peanut butter', 'wine', 'chicken stock', 'cream', 'butter', 'leaf parsley']",430.2,45.0,3.0,39.0,58.0,40.0,3.0,-
+389,bacon and cheddar dip,82621,20,4,"['cream', 'cheddar cheese', 'bacon', 'ranch dip', 'potato']",494.7,70.0,1.0,13.0,28.0,144.0,2.0,-
+390,baked country potatoes,361238,35,3,"['potato', 'butter', 'cheddar cheese', 'cream', 'durkee onion', 'bacon']",428.3,38.0,8.0,14.0,25.0,74.0,13.0,-
+391,cheddary mashed potato bake,127926,20,7,"['potato', 'cream', 'cheddar cheese', 'durkee onion']",317.2,26.0,5.0,9.0,22.0,54.0,9.0,-
+392,ranch red skin potato salad,92642,40,4,"['potato', 'ranch dip', 'cheddar cheese', 'bacon', 'durkee onion']",319.7,15.0,16.0,9.0,23.0,27.0,15.0,-
+393,the fix for leftover mashed potatoes,31464,35,4,"['potato', 'durkee onion', 'onion powder', 'pepper', 'cream', 'bacon', 'cheddar cheese']",340.5,24.0,19.0,34.0,20.0,43.0,13.0,-
+394,crumbed calamari,15258,15,11,"['calamari', 'breadcrumb', 'salt', 'pepper', 'garlic', 'egg', 'milk', 'oil', 'tartar sauce']",98.8,4.0,4.0,6.0,8.0,4.0,4.0,-
+395,easy scrambled eggs and scallion,272464,10,9,"['egg', 'scallion', 'oil', 'salt', 'pepper']",144.9,14.0,2.0,5.0,25.0,15.0,0.0,-
+396,eggplant  aubergine  sticks,58240,45,9,"['eggplant', 'breadcrumb', 'salt', 'pepper', 'egg', 'milk', 'oil']",105.1,4.0,16.0,19.0,10.0,4.0,5.0,-
+397,shadows fried dill pickles,206645,13,10,"['wheat flour', 'salt', 'pepper', 'milk', 'egg', 'pickle', 'cayenne pepper', 'oil']",162.4,4.0,8.0,38.0,12.0,5.0,9.0,-
+398,strudel  dough,507490,60,10,"['wheat flour', 'egg', 'milk', 'oil', 'salt']",215.6,10.0,0.0,2.0,12.0,5.0,10.0,-
+399,amazing apple cider,260335,40,7,"['apple', 'juice', 'water', 'cinnamon', 'crystal sugar', 'vanilla extract', 'honey']",47.6,0.0,36.0,0.0,0.0,0.0,3.0,['american']
+400,breakfast shake  with protein,42793,5,1,"['tofu', 'fruit', 'juice', 'honey']",41.9,0.0,31.0,0.0,1.0,0.0,3.0,['american']
+401,fresh mint melon ball salad,182821,20,3,"['mint', 'juice', 'honey', 'melon ball', 'melon ball', 'melon ball']",81.6,0.0,72.0,0.0,2.0,0.0,6.0,['american']
+402,honey lemon  un tea,175788,2,3,"['water', 'lemon juice concentrate', 'honey']",71.5,0.0,71.0,0.0,0.0,0.0,6.0,['american']
+403,hot totty,272914,10,5,"['brandy', 'honey', 'lemon', 'juice', 'water', 'berry tea bag']",150.4,0.0,70.0,0.0,0.0,0.0,6.0,['american']
+404,french croissant,166227,742,62,"['wheat flour', 'butter', 'salt', 'sugar', 'yeast', 'water', 'milk', 'half', 'egg', 'water']",495.1,48.0,10.0,28.0,16.0,97.0,15.0,-
+405,jiffy butter pie crust,8255,20,69,"['purpose flour', 'salt', 'butter', 'jumbo egg']",342.5,33.0,0.0,18.0,9.0,66.0,10.0,-
+406,lazy carbonara penne for a crowd   sacbee 11 5 08,358889,150,52,"['butter', 'wheat flour', 'milk', 'salt', 'nutmeg', 'pancetta', 'garlic', 'wine', 'leaf parsley', 'parmesan cheese', 'pecorino romano cheese', 'penne pasta']",545.6,29.0,1.0,40.0,30.0,55.0,26.0,-
+407,n  y  c  corned beef and cabbage,15846,182,70,"['beef brisket', 'peppercorn', 'leave', 'cabbage', 'potato', 'baby carrot', 'leaf parsley', 'butter', 'garlic', 'durkee onion', 'mustard', 'bread', 'harp lager beer']",563.8,39.0,36.0,69.0,58.0,40.0,20.0,-
+408,ruby tuesday s garlic and rosemary stuffed mushrooms,39084,85,36,"['garlic', 'oil', 'champignon mushroom', 'butter', 'breadcrumb', 'leaf parsley', 'rosemary sprigs', 'vegetable oil cooking spray']",226.7,20.0,10.0,6.0,11.0,12.0,7.0,-
+409,a tropical fruit parfait,284060,5,6,"['banana', 'apple juice', 'mango', 'kiwi', 'granola cereal']",455.9,13.0,236.0,0.0,15.0,8.0,31.0,-
+410,banana mango smoothies,121244,3,4,"['apple juice', 'mango', 'banana', 'honey', 'ice cube']",155.6,0.0,116.0,0.0,2.0,0.0,13.0,-
+411,mango banana smoothie,391620,2,2,"['ice cube', 'mango nectar', 'mango', 'banana']",133.2,0.0,102.0,0.0,2.0,0.0,11.0,-
+412,pineapple  mango and banana smoothie,278234,5,2,"['banana', 'mango', 'pineapple chunk']",457.9,2.0,325.0,0.0,9.0,2.0,39.0,-
+413,tropical sunrise smoothie,391602,2,2,"['mango', 'banana', 'mango nectar', 'pineapple chunk']",261.8,1.0,223.0,0.0,4.0,1.0,22.0,-
+414,bea s grilled pork chops,436687,17,2,"['oil', 'soy sauce', 'ginger', 'garlic', 'pork loin chop']",410.7,38.0,0.0,25.0,84.0,34.0,0.0,-
+415,pineapple grilled pork chops,461098,25,9,"['pineapple ring', 'sugar', 'soy sauce', 'garlic', 'pork loin chop', 'pepper']",430.4,27.0,76.0,46.0,86.0,29.0,7.0,-
+416,sea bass with lime ginger sauce,33492,13,3,"['lime', 'ginger', 'soy sauce', 'oil', 'garlic', 'pepper', 'pepper', 'sea bass fillet']",212.1,10.0,2.0,36.0,66.0,6.0,1.0,-
+417,skillet glazed chicken,91255,15,5,"['chicken breast', 'soy sauce', 'sugar', 'garlic', 'ginger', 'oil', 'pepper']",254.9,12.0,54.0,45.0,58.0,6.0,5.0,-
+418,teriyaki grilled salmon,224544,50,7,"['sugar', 'oil', 'soy sauce', 'garlic', 'ginger', 'salmon']",286.7,21.0,54.0,34.0,48.0,9.0,5.0,-
+419,battered chicken wings with pomegranate and mango barbecue sauce,288747,50,21,"['mango', 'water', 'pomegranate', 'tomato paste', 'mustard', 'sugar', 'smoke', 'salt', 'onion powder', 'garlic', 'cayenne pepper', 'cider vinegar', 'vegetable oil', 'chicken drummette', 'pepper', 'purpose flour', 'paprika', 'egg', 'milk']",2740.7,382.0,102.0,89.0,132.0,188.0,21.0,-
+420,beef paprika,73586,140,10,"['shortening', 'beef', 'durkee onion', 'ketchup', 'garlic', 'sauce', 'sugar', 'salt', 'paprika', 'mustard', 'cayenne pepper', 'water', 'wheat flour', 'spaghetti noodle']",1852.1,269.0,67.0,75.0,49.0,352.0,14.0,-
+421,copycat chick fil a spicy deluxe chicken sandwich,537331,80,16,"['juice', 'milk', 'lemon juice concentrate', 'sauce', 'garlic', 'onion powder', 'chicken thigh', 'peanut butter', 'egg', 'purpose flour', 'sugar', 'baking powder', 'salt', 'paprika', 'cayenne pepper', 'pepper', 'hamburger bun', 'butter', 'leaf lettuce', 'tomato', 'jack cheese']",3630.9,531.0,56.0,117.0,66.0,329.0,36.0,-
+422,spicy garlic mayonnaise,217725,10,12,"['pimiento', 'garlic', 'jumbo egg', 'oil', 'salt', 'pepper', 'cayenne pepper']",2086.7,351.0,7.0,77.0,16.0,171.0,2.0,-
+423,wendy s spicy chicken fillet sandwich by todd wilbur,134437,30,14,"['vegetable oil', 'habanero sauce', 'water', 'purpose flour', 'salt', 'cayenne pepper', 'pepper', 'onion powder', 'paprika', 'garlic', 'chicken breast fillet', 'hamburger bun', 'mayonnaise', 'lettuce leave', 'tomato']",3182.3,512.0,18.0,93.0,16.0,217.0,17.0,-
+424,fancy potatoes,52957,35,7,"['potato', 'milk', 'butter', 'salt', 'pepper', 'egg']",351.8,27.0,7.0,12.0,17.0,52.0,13.0,-
+425,potato griddle cakes,424380,130,10,"['potato', 'egg', 'wheat flour', 'milk', 'sugar', 'salt', 'pepper', 'butter']",248.9,6.0,6.0,18.0,17.0,10.0,14.0,-
+426,potato soup with rivels,87823,45,9,"['potato', 'wheat flour', 'salt', 'egg', 'milk', 'pepper']",347.2,10.0,6.0,16.0,26.0,17.0,19.0,-
+427,potato soup with whole wheat butter dumplings,30933,65,11,"['potato', 'butter', 'wheat flour', 'salt', 'pepper', 'milk', 'egg']",590.5,46.0,7.0,40.0,35.0,91.0,21.0,-
+428,swedish country style scrambled eggs,137046,20,7,"['butter', 'wheat flour', 'milk', 'egg', 'salt', 'pepper']",247.6,24.0,2.0,32.0,29.0,38.0,3.0,-
+429,easy sirloin tips,352046,40,9,"['beef sirloin', 'onion soup mix', 'water', 'wine', 'champignon mushroom', 'oil', 'wheat flour', 'salt', 'pepper']",424.9,39.0,7.0,50.0,48.0,41.0,5.0,['american']
+430,easy smothered beef moose venison,25349,255,7,"['roast', 'durkee onion', 'onion soup mix', 'water', 'salt', 'pepper', 'margarine', 'wheat flour']",414.7,46.0,22.0,17.0,44.0,51.0,4.0,['american']
+431,oven steak and gravy,29568,135,13,"['beef steak', 'wheat flour', 'salt', 'pepper', 'oil', 'water']",372.2,26.0,0.0,27.0,80.0,18.0,4.0,['american']
+432,round steak withtomato gravy,43508,100,9,"['beef steak', 'oil', 'water', 'tomato sauce', 'cumin powder', 'garlic', 'salt', 'pepper', 'wheat flour']",216.9,12.0,10.0,27.0,54.0,10.0,2.0,['american']
+433,slow cooked swiss steak,123293,500,7,"['wheat flour', 'pepper', 'salt', 'beef steak', 'oil', 'mushroom soup', 'water', 'celery seed', 'durkee onion', 'garlic', 'beef bouillon granule']",318.1,26.0,5.0,16.0,52.0,26.0,4.0,['american']
+434,almost instant black bean chili,179717,30,4,"['water', 'durkee onion', 'garlic', 'bell pepper', 'tomato', 'bean', 'chily', 'cumin']",155.4,1.0,8.0,0.0,19.0,0.0,9.0,-
+435,chipotle honey dipping sauce  for shrimp cocktail,264987,20,5,"['chipotle chile', 'tomato', 'durkee onion', 'garlic', 'water', 'salt', 'honey', 'vinegar']",43.6,0.0,40.0,12.0,0.0,0.0,3.0,-
+436,kristi s fresh dip,187253,20,3,"['chily', 'olive', 'tomato', 'durkee onion', 'garlic', 'pepper', 'vegetable oil', 'vinegar']",306.0,41.0,27.0,22.0,6.0,17.0,5.0,-
+437,simple amazing salsa,461011,5,4,"['tomato', 'chily', 'garlic', 'durkee onion', 'ground cilantro']",29.0,0.0,14.0,7.0,2.0,0.0,2.0,-
+438,simply delicious salsa,257125,25,3,"['ground cilantro', 'vinegar', 'durkee onion', 'jalapeno pepper', 'canola oil', 'tomato', 'garlic']",67.8,5.0,18.0,10.0,2.0,1.0,2.0,-
+439,buckwheat groats,68224,30,6,"['buckwheat groat', 'water']",154.6,1.0,6.0,0.0,11.0,1.0,11.0,-
+440,food works how to cook pasta,515683,17,15,"['penne pasta', 'water']",371.0,2.0,10.0,1.0,26.0,1.0,24.0,-
+441,pasta in the rice cooker,227376,32,9,"['penne pasta', 'water', 'pizza sauce', 'ground beef']",573.2,10.0,80.0,41.0,37.0,4.0,36.0,-
+442,simple chocolate chai tea,280598,5,7,"['chocolate powder', 'chai tea', 'water']",112.8,1.0,82.0,6.0,3.0,3.0,7.0,-
+443,van gogh s regret,8558,2,8,"['absinthe', 'sugar cube', 'water']",8.9,0.0,9.0,0.0,0.0,0.0,0.0,-
+444,baltimore crab cakes,18880,25,5,"['crabmeat', 'egg', 'sauce', 'mustard seed', 'mayonnaise', 'cream', 'lemon juice concentrate', 'mustard', 'butter', 'parsley flake', 'bay seasoning', 'breadcrumb', 'lemon wedge']",221.7,11.0,5.0,48.0,52.0,16.0,3.0,['american']
+445,down home crab cakes,5379,0,6,"['mayonnaise', 'egg', 'bell pepper', 'durkee onion', 'kernel corn', 'mustard', 'pepper', 'crabmeat', 'breadcrumb', 'butter', 'vegetable oil']",485.8,28.0,17.0,37.0,69.0,28.0,14.0,['american']
+446,tangier island   baked hot crab  a la maryland   longmeadow farm,222431,40,3,"['crabmeat', 'durkee onion', 'butter', 'breadcrumb', 'mustard', 'mayonnaise', 'sauce', 'texas pete', 'egg', 'bay seasoning', 'pepper', 'garlic']",226.1,17.0,8.0,36.0,34.0,28.0,4.0,['american']
+447,sassy s crab cakes,249133,30,8,"['durkee onion', 'pepper', 'celery seed', 'butter', 'crabmeat', 'breadcrumb', 'egg', 'mayonnaise', 'lemon juice concentrate', 'seafood seasoning', 'sauce', 'mustard', 'cayenne pepper', 'pepper', 'salt', 'vegetable oil']",325.1,34.0,8.0,36.0,28.0,30.0,5.0,-
+448,a   kicking porterhouse steak,415719,15,11,"['sirloin steak', 'salt', 'pepper']",1619.3,181.0,0.0,15.0,261.0,232.0,0.0,-
+449,oven barbecued turkey wings,302110,50,15,"['butter', 'durkee onion', 'garlic', 'chili powder', 'ketchup', 'sugar', 'lemon juice concentrate', 'salt', 'leaf basil', 'pepper', 'tabasco jalapeno sauce', 'turkey wing']",1552.9,143.0,114.0,50.0,278.0,139.0,11.0,-
+450,rosemary chicken wings,68677,35,8,"['butter', 'leaf parsley', 'lemon juice concentrate', 'rosemary sprigs', 'paprika', 'chicken wing', 'salt', 'pepper']",2934.2,349.0,1.0,48.0,417.0,400.0,0.0,-
+451,rudys ribs,26962,495,8,"['baby back rib', 'tomato pasta sauce', 'basil leave', 'garlic', 'sugar', 'salt', 'pepper']",1895.2,216.0,105.0,107.0,231.0,253.0,11.0,-
+452,satay beef,91988,27,8,"['sirloin steak', 'butter', 'lemon juice concentrate', 'tabasco jalapeno sauce', 'durkee onion', 'sugar', 'coriander sprig', 'cumin powder', 'ginger', 'garlic', 'soy sauce', 'pepper']",1928.5,206.0,117.0,246.0,276.0,299.0,12.0,-
+453,crock pot hot wings,15836,495,5,"['chicken wing', 'sauce', 'butter', 'water', 'garlic']",1425.5,182.0,3.0,89.0,168.0,247.0,0.0,['american']
+454,big brothers chicken wings,250644,30,10,"['butter', 'sauce', 'lemon juice concentrate', 'purpose flour', 'wheat flour', 'paprika', 'cayenne pepper', 'salt', 'chicken wing']",2237.7,264.0,3.0,152.0,294.0,321.0,6.0,-
+455,buffalo hot wings anchor bar style,381144,75,9,"['chicken wing', 'cooking oil', 'pepper', 'butter', 'sauce', 'vinegar', 'garlic']",1530.0,180.0,8.0,215.0,217.0,205.0,1.0,-
+456,hooters buffalo wings oven style,234329,130,8,"['chicken wing', 'butter', 'sauce', 'wheat flour', 'cayenne pepper', 'garlic', 'salt']",1675.5,192.0,3.0,118.0,191.0,256.0,12.0,-
+457,hot honey bbq garlic wings,155780,90,8,"['chicken wing', 'sauce', 'butter', 'ketchup', 'mustard', 'onion powder', 'garlic', 'sauce', 'soy sauce', 'honey', 'cayenne pepper']",2173.2,239.0,239.0,245.0,256.0,298.0,21.0,-
+458,chocolatey mocha crinkles,128286,30,9,"['margarine', 'sugar', 'egg white', 'cherry yogurt', 'cocoa', 'coffee crystal', 'baking soda', 'cinnamon', 'wheat flour', 'purpose flour']",44.0,2.0,15.0,2.0,1.0,1.0,2.0,-
+459,cocoa berry muffins,32743,40,7,"['egg white', 'applesauce', 'yogurt', 'wheat flour', 'cocoa', 'sugar', 'baking powder', 'baking soda', 'strawberry']",153.0,0.0,59.0,6.0,7.0,0.0,11.0,-
+460,fat free chewy chocolate cookies,89186,24,7,"['wheat flour', 'sugar', 'cocoa', 'baking soda', 'salt', 'syrup', 'egg white']",55.1,0.0,19.0,2.0,2.0,0.0,4.0,-
+461,fat free gingerbread cookies,303440,27,2,"['wheat flour', 'baking soda', 'ginger powder', 'molasses', 'sugar', 'juice concentrate']",29.8,0.0,26.0,2.0,0.0,0.0,2.0,-
+462,no pudge brownie clone,116219,40,9,"['sugar', 'wheat flour', 'cocoa', 'egg white', 'cornstarch', 'baking soda', 'salt', 'cherry yogurt', 'vegetable oil cooking spray']",83.1,0.0,50.0,2.0,3.0,0.0,6.0,-
+463,double macaroni and cheese,4844,50,11,"['wheat elbow macaroni', 'cheddar cheese', 'cottage cheese', 'wheat flour', 'butter', 'milk', 'salt', 'pepper']",691.7,53.0,6.0,43.0,68.0,108.0,19.0,['american']
+464,hattie jo s homemade macaroni,380270,50,7,"['wheat elbow macaroni', 'butter', 'wheat flour', 'salt', 'pepper', 'milk', 'cheddar cheese']",592.7,45.0,5.0,27.0,52.0,92.0,18.0,['american']
+465,no bake homemade mac n cheese,440173,15,8,"['wheat elbow macaroni', 'butter', 'salt', 'pepper', 'wheat flour', 'milk', 'velveeta cheese', 'mustard', 'cheddar cheese']",657.7,43.0,32.0,59.0,51.0,87.0,24.0,['american']
+466,southern style macaroni and cheese,31240,45,7,"['wheat elbow macaroni', 'butter', 'milk', 'milk', 'egg', 'cheddar cheese', 'mustard', 'salt', 'pepper', 'cheddar cheese']",494.3,47.0,13.0,32.0,48.0,94.0,9.0,['american']
+467,super creamy macaroni and cheese,450241,20,9,"['wheat elbow macaroni', 'butter', 'wheat flour', 'salt', 'mustard', 'pepper', 'milk', 'cheddar cheese', 'gouda cheese']",435.9,28.0,6.0,18.0,35.0,57.0,16.0,['american']
+468,chocolate espresso cheesecake,86476,150,16,"['ground pecan', 'chocolate wafer', 'butter', 'cheese', 'sugar', 'egg', 'cream', 'vanilla', 'semisweet chocolate', 'espresso', 'cream', 'sugar']",7576.6,968.0,1149.0,142.0,270.0,1580.0,163.0,-
+469,chocolate fantasy cake with chocolate ganache icing,98901,65,20,"['butter', 'semisweet chocolate', 'egg', 'sugar', 'vanilla extract', 'salt', 'cream', 'raspberry', 'cream']",4613.7,637.0,624.0,70.0,189.0,1254.0,98.0,-
+470,coffee ice cream,100629,20,10,"['egg', 'sugar', 'milk', 'salt', 'cream', 'milk', 'vanilla extract', 'coffee crystal']",2955.1,387.0,516.0,28.0,62.0,773.0,51.0,-
+471,irish cream cheesecake,82511,170,20,"['vanilla wafer', 'butter', 'cheese', 'sugar', 'gelatin', 'egg', 'cream', 'cream', 'vanilla', 'semisweet chocolate']",4544.6,511.0,1306.0,128.0,149.0,937.0,111.0,-
+472,scrumptious brownies,190205,55,16,"['butter', 'semisweet chocolate', 'sugar', 'egg', 'sugar', 'vanilla', 'salt', 'purpose flour', 'pistachio']",4741.3,498.0,1264.0,169.0,138.0,981.0,159.0,-
+473,chicken piccata with mushrooms,231007,35,15,"['chicken breast', 'wheat flour', 'salt', 'pepper', 'butter', 'oil', 'champignon mushroom', 'chicken broth', 'lemon juice concentrate', 'caper', 'parmesan cheese', 'leaf parsley', 'penne pasta']",562.0,27.0,10.0,54.0,91.0,38.0,17.0,"['american', 'italian']"
+474,easy shrimp fettuccine,121218,20,6,"['fettuccine', 'shrimp', 'butter', 'leaf parsley', 'garlic', 'lemon juice concentrate', 'chicken broth', 'salt', 'pepper']",479.6,30.0,5.0,20.0,63.0,53.0,14.0,['italian']
+475,penne with cabbage and mushrooms,372417,30,9,"['penne pasta', 'garlic', 'olive oil', 'rosemary sprigs', 'cabbage', 'champignon mushroom', 'wine', 'chicken broth', 'butter', 'parmesan cheese', 'leaf parsley', 'salt', 'pepper']",406.7,21.0,11.0,19.0,26.0,23.0,18.0,['italian']
+476,shrimp and angel hair pasta,301002,20,13,"['angel hair pasta', 'olive oil', 'shrimp', 'garlic', 'salt', 'pepper', 'chicken broth', 'pepper flake', 'lemon peel', 'lemon juice concentrate', 'leaf parsley', 'parmesan cheese']",406.8,17.0,9.0,64.0,55.0,13.0,15.0,"['american', 'italian']"
+477,shrimp fettuccini with butter sauce  not alfredo,132821,50,15,"['shrimp', 'butter', 'oil', 'lemon juice concentrate', 'leaf parsley', 'garlic', 'top', 'champignon mushroom', 'salt', 'leaf basil', 'pepper', 'oregano', 'fettuccine', 'parmesan cheese', 'mozzarella cheese']",1020.7,90.0,5.0,48.0,106.0,106.0,23.0,['italian']
+478,cheesy beef casserole,307221,45,9,"['egg noodle', 'ground beef', 'durkee onion', 'tomato sauce', 'garlic', 'salt', 'pepper', 'cheese', 'cream', 'parmesan cheese', 'pepper']",406.5,41.0,13.0,27.0,39.0,73.0,7.0,['american']
+479,sallie s hamburger casserole,248097,60,8,"['ground beef', 'salt', 'pepper', 'garlic', 'oregano', 'sugar', 'tomato sauce', 'egg noodle', 'cream', 'cottage cheese', 'durkee onion', 'cheddar cheese']",708.9,63.0,37.0,56.0,90.0,102.0,12.0,['american']
+480,husbands delight  boyfriends delight  best friends delight    et,343430,45,10,"['egg noodle', 'garlic', 'ground beef', 'butter', 'tomato sauce', 'salt', 'pepper', 'sugar', 'ricotta cheese', 'cheese', 'cream', 'durkee onion', 'pepper', 'cheddar cheese']",569.0,55.0,26.0,30.0,61.0,94.0,10.0,-
+481,italian pasta bake,144529,60,10,"['ground beef', 'tomato sauce', 'salt', 'sugar', 'garlic', 'oregano', 'pepper', 'cheese', 'cream', 'durkee onion', 'egg noodle', 'parmesan cheese']",522.7,44.0,14.0,40.0,65.0,77.0,10.0,-
+482,quick beef casserole,361123,60,14,"['butter', 'ground beef', 'durkee onion', 'garlic', 'oregano', 'pepper', 'salt', 'sugar', 'tomato sauce', 'tomato', 'egg noodle', 'durkee onion', 'cheese', 'cream', 'cheese']",540.0,56.0,22.0,24.0,51.0,96.0,9.0,-
+483,balsamic cashew pea salad,310038,5,2,"['pea', 'celery seed', 'durkee onion', 'cashew piece', 'vinaigrette']",194.6,16.0,21.0,4.0,15.0,10.0,6.0,-
+484,carrots in the crock pot,363145,370,1,"['baby carrot', 'chicken stock', 'celery seed']",125.6,5.0,31.0,16.0,14.0,4.0,5.0,-
+485,doctored gefilte fish,79952,100,6,"['durkee onion', 'celery seed', 'baby carrot', 'gefilte fish', 'paprika']",94.7,2.0,13.0,17.0,15.0,1.0,4.0,-
+486,fancy peas,323905,25,4,"['mushroom slice', 'durkee onion', 'margarine', 'pea', 'celery seed', 'salt']",74.5,4.0,14.0,10.0,6.0,2.0,2.0,-
+487,grated baked carrots,296132,30,2,"['baby carrot', 'durkee onion', 'celery seed', 'margarine', 'water']",47.3,4.0,9.0,3.0,1.0,2.0,1.0,-
+488,spanakopita  greek spinach pie,27681,105,23,"['spinach', 'egg', 'durkee onion', 'mozzarella cheese', 'parmesan cheese', 'feta cheese', 'oil', 'baby dill pickle', 'pepper', 'phyllo dough', 'butter']",810.7,96.0,11.0,43.0,51.0,134.0,13.0,['greek']
+489,spanikopita,452333,60,40,"['phyllo dough', 'spinach', 'liquid', 'feta cheese', 'mizithra cheese', 'egg', 'durkee onion', 'garlic', 'leaf basil', 'oregano', 'leaf parsley', 'oil', 'butter']",836.1,76.0,22.0,73.0,55.0,121.0,23.0,"['american', 'greek']"
+490,vegetable bechamel lasagne,293604,165,48,"['oil', 'durkee onion', 'garlic', 'grape tomato', 'leaf parsley', 'salt', 'pepper', 'butter', 'purpose flour', 'milk', 'parmesan cheese', 'ricotta cheese', 'egg', 'clove', 'broccoli', 'bell pepper', 'baby carrot', 'zucchini', 'spinach', 'garlic', 'lasagna noodle', 'mozzarella cheese']",630.9,50.0,42.0,27.0,60.0,70.0,18.0,['italian']
+491,burek  or feta cheese  phyllo pie,310570,65,38,"['phyllo dough', 'egg', 'milk', 'feta cheese', 'oil', 'cottage cheese']",428.1,29.0,11.0,40.0,37.0,44.0,14.0,-
+492,spinach and feta crepes,20568,60,35,"['spinach', 'durkee onion', 'feta cheese', 'cheese', 'ricotta cheese', 'nutmeg', 'salt', 'pepper', 'egg', 'purpose flour', 'egg', 'milk', 'butter', 'oil']",334.1,20.0,9.0,17.0,38.0,33.0,12.0,-
+493,acorn squash custard,139407,130,17,"['acorn squash', 'sugar', 'butter', 'egg', 'mustard', 'cinnamon', 'allspice', 'nutmeg']",219.2,16.0,43.0,4.0,7.0,31.0,10.0,['american']
+494,b   b homemade granola,264683,40,4,"['oat', 'sugar', 'allspice', 'cinnamon', 'butter', 'honey', 'pistachio']",278.1,16.0,53.0,1.0,14.0,21.0,13.0,['american']
+495,blackberry cordial  spirits,239156,35,5,"['juice', 'sugar', 'nutmeg', 'cinnamon', 'allspice', 'clove', 'brandy']",539.8,2.0,306.0,0.0,0.0,4.0,26.0,['american']
+496,candied acorn squash,3983,0,8,"['acorn squash', 'butter', 'sugar', 'maple syrup', 'cinnamon']",223.2,12.0,67.0,3.0,3.0,24.0,13.0,['american']
+497,spicy apple stuffed squash,3764,0,10,"['acorn squash', 'apple', 'butter', 'sugar', 'cinnamon', 'nutmeg', 'clove']",93.0,3.0,27.0,0.0,2.0,6.0,6.0,['american']
