@@ -54,7 +54,7 @@ def recipe_recommender_UI(df):
             with st.spinner('Please wait while we cook some recipe recomdations for you ...'):
                 responses = []
                 for recipe_id in seleted_recipie_ids:
-                    response = requests.get('http://144.202.23.218:8060/search/'+str(recipe_id))
+                    response = requests.get('http://144.202.23.218:8060/search/'+str(recipe_id), headers={"api-key": st.secrets["api_key"]})
                     responses.extend(response.json())
                 
                 ## Remove duplicate recipes
