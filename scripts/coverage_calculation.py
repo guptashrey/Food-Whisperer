@@ -1,23 +1,49 @@
+# library imports
 from multiprocessing import Pool
 from inference import get_recommended_recipes
 import pandas as pd
 import os
 import glob
 
+# reading the raw interactions data
 print("Reading Data...")
 interactions = pd.read_csv("../data/RAW_interactions.csv")
+
+# sorting the interactions by user_id and rating
 interactions.sort_values(by=["user_id", "rating"], ascending=False, inplace=True)
 interactions = interactions[["user_id", "recipe_id", "rating"]]
+
+# getting the top 5 interactions for each user based on highest rating
 top_5_interactions = interactions.groupby("user_id").head().reset_index(drop=True)
 
+# getting the unique recipe ids from the top 5 interactions
 list_of_recipes = list(set(top_5_interactions.recipe_id))
 
 def get_rec(first_last):
+	"""
+	Function for the pool handler to get recommendations for unique recipes
+
+	Args:
+		first_last (tuple): tuple containing the first and last index of the list of recipes to get recommendations for and the name of the file to save the recommendations
+
+	Returns:
+		None
+	"""
+	
 	print(f"Generating recommendations for unique recipes from {first_last[0]} to {first_last[1]}")
 	list_of_recipes_temp = list_of_recipes[first_last[0]:first_last[1]]
 	pd.DataFrame(get_recommended_recipes(list_of_recipes_temp)).to_csv(f'../data/processed/coverage_calculation/{first_last[2]}.csv')
 
 def pool_handler():
+	"""
+	Function to handle the multiprocessing pool
+
+	Args:
+		None
+
+	Returns:
+		None
+	"""
 	p=Pool(39)
 	p.map(get_rec, [
 		(0,100,'A000001'),
@@ -1096,10 +1122,14 @@ if __name__ == '__main__':
 	
 	print("Generating top recommendations for all users in the dataset.")
 	
+	# Generate recommendations for all users in the dataset using the pool_handler() function.
+	# Commented as it takes a long time to run and the results are already saved in the data/processed/coverage_calculation folder.
+	
 	#pool_handler()
 	
 	print("Recommendation generation completed.")
 	
+	# Read all the csv files in the data/processed/coverage_calculation folder and concatenate them into a single dataframe.
 	path = '../data/processed/coverage_calculation/'
 	extension = 'csv'
 	os.chdir(path)
@@ -1113,4 +1143,5 @@ if __name__ == '__main__':
 			temp = pd.read_csv(result[i])
 			final = pd.concat([final, temp], axis=0)
 
+	# Calculate the coverage of the recommendation system by dividing the number of unique items recommended by the total number of items in the dataset.
 	print(f"The coverage of the recommendation system is: {round(((len(set(final.id))/230186)*100), 2)}%.")

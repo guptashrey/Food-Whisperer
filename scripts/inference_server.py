@@ -1,22 +1,25 @@
 # library imports
 from fastapi import FastAPI
 from inference import get_recommended_recipes
+
 # initialize fastapi app
 app = FastAPI()
 
-# define search endpoint
+# define recommendation endpoint
 @app.get("/search/{query}")
 async def search(query: int):
     '''
-    Search endpoint for recommending recipes.
+    API endpoint for recommending recipes.
+
     Args:
-        query (str): Query string.
+        query (int): recipe id.
+    
     Returns:
-        dict: Dictionary containing search results.
+        dict: Dictionary containing the recommendations.
     '''
 
-    # run qna pipeline on reddit posts
+    # run the inference pipeline to get recommendations
     results = get_recommended_recipes([query])
 
-    # return search results
+    # return the results
     return results.to_dict(orient="records")
