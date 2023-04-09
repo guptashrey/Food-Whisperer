@@ -1,6 +1,6 @@
-# Food-Whisperer
-
-A Food Recipe Recommendation System
+# Food Whisper: Food Recipe Recommender
+> #### _Archit, Bryce, Shrey | Spring '23 | Duke AIPI 540 Recommender Systems Project_
+&nbsp;
 
 ## Project Description
 
