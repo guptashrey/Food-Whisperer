@@ -117,116 +117,99 @@ def process_recipes(recipes_df, processed_data_folder_path=os.path.join("data", 
     Returns:
         pd.DataFrame: The processed recipes dataframe.
     """
-    # Get the appropriate columns from the recipes dataframe
-    recipes_df_processed = recipes_df[['name', 'id', 'minutes', 'tags', 'nutrition', 'n_steps', 'ingredients']]
+    # Instantiate the MultiLabelBinarizer and load the ingredient mapping
     mlb = MultiLabelBinarizer()
+    ingredient_mapping_dict = load_ingredient_mapping_dict(data_folder_path=os.path.join("..", "data", "processed"))
+
+    # Get the appropriate columns from the recipes dataframes and do some renaming
+    recipes_df_processed = recipes_df[['name', 'id', 'minutes', 'tags', 'nutrition', 'n_steps', 'ingredients']]
+    recipes_df_processed = recipes_df_processed.rename(columns={'tags': 'cuisine'})
 
     # Expand the nutrition column into 7 columns
     nutrition_columns = ['calories', 'fat_amount', 'sodium_amount', 'protein_amount', 'sugar_amount', 'saturated_fat', 'carbohydrates']
     recipes_df_processed['nutrition'] = recipes_df_processed['nutrition'].str.replace('[', '').str.replace(']', '')
     recipes_df_processed[nutrition_columns] = recipes_df_processed['nutrition'].str.split(',', expand=True).astype(float)
     recipes_df_processed = recipes_df_processed.drop(columns=['nutrition'])
-    print("Saving the results for display...")
-    recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes_for_display.csv"), index=False)
 
-    # Normalize the columns that aren't onehot encoded
-    scaler = StandardScaler()
-    columns_to_normalize = ['minutes', 'n_steps'] + nutrition_columns
-    recipes_df_processed[columns_to_normalize] = scaler.fit_transform(recipes_df_processed[columns_to_normalize])
+    # Convert the tags column to a cuisine column
+    columns_minus_cuisine = list(recipes_df_processed.columns.drop('cuisine'))
+    recipes_df_processed["cuisine"] = recipes_df_processed["cuisine"].apply(lambda x: x.replace("[", "").replace("]", "").replace("'", "").split(","))
 
-    # Explode the tags column and one hot encode them
-    recipes_df_processed["tags"] = recipes_df_processed["tags"].apply(lambda x: x.replace("[", "").replace("]", "").replace("'", "").split(","))
-    recipes_df_processed = _onehot_encode_cuisines(recipes_df_processed, mlb)
+    # Get all the tags
+    recipes_df_processed = recipes_df_processed.explode(column='cuisine')
+    recipes_df_processed['cuisine'] = recipes_df_processed['cuisine'].str.strip()
 
-    # Explode the ingredients column and one hot encode them
+    # Drop tags not in the cuisine types and recombine the cuisine columns
+    df_included = recipes_df_processed[recipes_df_processed['cuisine'].isin(CUISINES)]
+    df_included = df_included.groupby(columns_minus_cuisine).agg({'cuisine': lambda x: list(x)}).reset_index()
+    df_excluded = recipes_df_processed[~recipes_df_processed['cuisine'].isin(CUISINES)]
+    df_excluded = df_excluded.groupby(columns_minus_cuisine).agg({'cuisine': lambda x: list(x)}).reset_index()
+    recipes_df_processed = df_included.merge(df_excluded, on=columns_minus_cuisine, how='outer').fillna("-")
+    recipes_df_processed = recipes_df_processed.drop(columns=['cuisine_y']).rename(columns={'cuisine_x': 'cuisine'})
+
+    # Replace the ingredients using thr mapping
     recipes_df_processed["ingredients"] = recipes_df_processed["ingredients"].apply(lambda x: x.replace("[", "").replace("]", "").replace("'", "").split(","))
-    ingredient_mapping = load_ingredient_mapping_dict(data_folder_path=processed_data_folder_path)
-    # One-hot encode the ingredients
-    recipes_df_processed = _onehot_encode_ingredients(recipes_df_processed, mlb, ingredient_mapping)
+    recipes_df_processed["ingredients"] = recipes_df_processed["ingredients"].apply(lambda x: [ingredient_mapping_dict[ingr] for ingr in x])
+    recipes_df_processed_display = recipes_df_processed.copy()
     
+    # Onehot encode the cuisine columns
+    recipes_df_processed = recipes_df_processed.join(pd.DataFrame(mlb.fit_transform(recipes_df_processed.pop('cuisine')),
+                            columns=mlb.classes_,
+                            index=recipes_df_processed.index))
+
+    # Onehot encode the ingredients columns
+    recipes_df_processed = _onehot_encode_ingredients(recipes_df_processed, mlb)
+
+
+    # Drop the name column for the similarity matrix and normalize the data
+    recipes_df_processed = recipes_df_processed.drop(columns=['name'])
+    columns_to_normalize = ['minutes', 'n_steps'] + nutrition_columns
+    recipes_df_processed[columns_to_normalize] = StandardScaler().fit_transform(recipes_df_processed[columns_to_normalize])
+
     # Save the results
-    print("Saving the results for similarity calculation...")
+    print("Saving the results...")
+    recipes_df_processed_display.to_csv(os.path.join(processed_data_folder_path, "processed_recipes_for_display.csv"), index=False)
     recipes_df_processed.to_csv(os.path.join(processed_data_folder_path, "processed_recipes_for_similarity.csv"), index=False)
 
 
 ##### Helper Functions #####
-def _onehot_encode_ingredients(df, mlb, ingredient_mapping_dict, min_num_occurances=100):
-    """A helper function to one-hot encode the ingredients column of the recipes dataframe.Before one-hot encoding, 
-    the ingredients are mapped to a smaller set of ingredients using the ingredient_mapping.csv file.
+def _onehot_encode_ingredients(recipes_df_processed, mlb, min_num_occurences=100):
+    """A helper function to one-hot encode the ingredients column of the recipes dataframe.
 
     Args:
-        df (pd.DataFrame): The recipes dataframe.
+        recipes_df_processed (pd.DataFrame): The processed recipes dataframe.
         mlb (sklearn.preprocessing.MultiLabelBinarizer): An instance of the MultiLabelBinarizer class.
         min_num_occurences (int, optional): The minimum number of occurances of an ingredient for it to be included in the one-hot encoding. Defaults to 10.
 
     Returns:
         pd.DataFrame: The recipes dataframe with the ingredients column one-hot encoded.
     """
-    columns_minus_ingredients = list(df.columns.drop('ingredients'))
+    columns_minus_ingredients = list(recipes_df_processed.columns.drop('ingredients'))
+    recipes_df_processed = recipes_df_processed.explode(column='ingredients')
 
-    # Explode the ingredients column
-    df_processed = df.explode(column='ingredients')
-    
-    # Replace the ingredients using the ingredient mapping
-    df_processed['ingredients'] = df_processed['ingredients'].apply(lambda x: ingredient_mapping_dict[x])
-    
     # Only keep ingredients if they occur often enough
-    df_processed['ingredients'] = df_processed['ingredients'].str.strip()
-    ingredient_counts = df_processed['ingredients'].value_counts()
-    top_ingredients = ingredient_counts[ingredient_counts >= min_num_occurances]
-    
+    recipes_df_processed['ingredients'] = recipes_df_processed['ingredients'].str.strip()
+    ingredient_counts = recipes_df_processed['ingredients'].value_counts()
+    top_ingredients = ingredient_counts[ingredient_counts >= min_num_occurences]
+
     # Seperate the recipes with and without ingredients in top_ingredients
-    df_included = df_processed[df_processed['ingredients'].isin(top_ingredients.index)]
+    df_included = recipes_df_processed[recipes_df_processed['ingredients'].isin(top_ingredients.index)]
     df_included = df_included.groupby(columns_minus_ingredients).agg({'ingredients': lambda x: list(x)}).reset_index()
-    
-    df_excluded = df_processed[~df_processed['ingredients'].isin(top_ingredients.index)]
+
+    df_excluded = recipes_df_processed[~recipes_df_processed['ingredients'].isin(top_ingredients.index)]
     df_excluded = df_excluded.groupby(columns_minus_ingredients).agg({'ingredients': lambda x: list(x)}).reset_index()
-    
+
     # One-hot encode the ingredients
     df_included = df_included.join(pd.DataFrame(mlb.fit_transform(df_included.pop('ingredients')),
-                          columns=mlb.classes_,
-                          index=df_included.index))
-    
+                            columns=mlb.classes_,
+                            index=df_included.index))
+
     # Combine the excluded recipes back in
-    df_processed = df_included.merge(df_excluded, on=columns_minus_ingredients, how='outer').fillna(0)
-    df_processed = df_processed.drop(columns=['ingredients'])
+    recipes_df_processed = df_included.merge(df_excluded, on=columns_minus_ingredients, how='outer').fillna(0)
+    recipes_df_processed = recipes_df_processed.drop(columns=['ingredients'])
     
     # Return the results
-    return df_processed
-
-def _onehot_encode_cuisines(df, mlb):
-    """A helper function to one-hot encode the tags and turn them into cuisine data
-
-    Args:
-        df (pd.DataFrame): The recipes dataframe.
-        mlb (sklearn.preprocessing.MultiLabelBinarizer): An instantiated MultiLabelBinarizer object.
-
-    Returns:
-        pd.DataFrame: The recipes dataframe with one-hot encoded cuisine data.
-    """
-    columns_minus_tags = list(df.columns.drop('tags'))
-    
-    # Get all the tags
-    df_processed = df.explode(column='tags')
-    df_processed['tags'] = df_processed['tags'].str.strip()
-    
-    # Drop tags not in the cuisine types
-    df_included = df_processed[df_processed['tags'].isin(CUISINES)]
-    df_included = df_included.groupby(columns_minus_tags).agg({'tags': lambda x: list(x)}).reset_index()
-    
-    df_excluded = df_processed[~df_processed['tags'].isin(CUISINES)]
-    df_excluded = df_excluded.groupby(columns_minus_tags).agg({'tags': lambda x: list(x)}).reset_index()
-    
-    # One-hot encode the tags
-    df_included = df_included.join(pd.DataFrame(mlb.fit_transform(df_included.pop('tags')),
-                          columns=mlb.classes_,
-                          index=df_included.index))
-    # Combine the excluded recipes back in
-    df_processed = df_included.merge(df_excluded, on=columns_minus_tags, how='outer').fillna(0)
-    df_processed = df_processed.drop(columns=['tags'])                                     
-    
-    # Return the results
-    return df_processed
+    return recipes_df_processed
 
 def _get_top_recipes(interactions_df, recipes_df, num_recipes=25):
     """Helper function to get the top recipes based on the number of ratings it has
