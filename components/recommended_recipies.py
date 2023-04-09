@@ -1,38 +1,63 @@
 ## Library imports
 import streamlit as st
 import matplotlib.pyplot as plt
+import ast
 
 
 def recommended_recipes_UI():
     """
-    The main UI function to display the Landing page UI
+    The main UI function to display the recommended recipes page
     """
     st.divider()
     st.header('Check these recipies out ... ')
 
     ## Get the top recommended recipes
     recipes = st.session_state.toprecipies
-
     
-        
     ## Display the top recipes to the user
+    counter = 1
     for recipe in recipes:
         with st.container():
-            col1, col2, col3 = st.columns([1, 2, 1])
-            #for recipe in recipes:
+            col1, col2 = st.columns([1, 3])
 
             ## Display the recipe image    
             with col1:
-                st.image(f'./data/images/recipies/{recipe["image"]}', use_column_width=True)
+                st.image(f'./data/images/recomended_recipies/{counter}.jpg', use_column_width=True)
+                counter = counter + 1
+                if counter > 4:
+                    counter = 1
+
             ## Display the recipe title
             with col2:
-                st.write(recipe["title"])
+                with st.container():
+                    st.subheader(recipe["name"])
+                
+                with st.container():
+                    col3, col4, col5 = st.columns([1, 1, 1])
+
+                    ## Display the recipe cuisine and calories
+                    with col3:
+                        if recipe["cuisine"] == '-':
+                            cuisine = 'Unknown'
+                        else:
+                            cuisine = ", ".join(ast.literal_eval(recipe["cuisine"]))
+                        st.info(f'Cuisine: {cuisine}', icon="🧑‍🍳")
+                        st.success(f'Calories: {recipe["calories"]} Kcal', icon="✅")
+                    
+                    ## Display the recipe time to cook and number of steps
+                    with col4:
+                        st.error(f'Time to Cook: {recipe["minutes"]} Mins', icon="🔥")
+                        st.error(f'Num of Steps: {recipe["n_steps"]} Steps', icon="🚨")
+
+                    ## Display the recipe ingredients
+                    with col5:
+                        st.warning(f'Ingredients: {", ".join(ast.literal_eval(recipe["ingredients"]))}', icon="🍕")            
         
         ## Add css to the recipe container
         st.markdown("""
                     <style>
                         [data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
-                            border: 2px groove black;
+                            border: 1px groove black;
                             padding: 10px;
                         }
                     </style>
@@ -45,10 +70,6 @@ def recommended_recipes_UI():
                         background-color: #0099ff;
                         color:#ffffff;
                     }
-                    div.stButton > button:hover {
-                        background-color: #03fc88;
-                        color:#ff0000;
-                        }
                     </style>""", unsafe_allow_html=True)
     
     ## Add a go back button

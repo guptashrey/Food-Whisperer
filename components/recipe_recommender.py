@@ -1,6 +1,8 @@
 ## Library imports
 import streamlit as st
 import matplotlib.pyplot as plt
+import requests
+
 from config import PAGES
 
 def recipe_recommender_UI(df):
@@ -39,24 +41,35 @@ def recipe_recommender_UI(df):
                     background-color: #0099ff;
                     color:#ffffff;
                 }
-                div.stButton > button:hover {
-                    background-color: #03fc88;
-                    color:#ff0000;
-                    }
                 </style>""", unsafe_allow_html=True)
     
     col4, col5, col6 = st.columns([1, 1.5, 1])
     with col5:
         if st.button('Recommend Recipes', use_container_width=True):
-            ## Get the selected recipes
-            seleted_recipied = [recipe for recipe in recipes if recipe["selected"]]
-
-            ## Save the selected recipes to the session state
-            st.session_state.toprecipies = seleted_recipied
+            
+            ## Get the recipe ids for recippies selected by user
+            seleted_recipie_ids = [recipe["recipe_id"] for recipe in recipes if recipe["selected"]]
+            
+            ## Fetch the recommended recipies from the API
+            with st.spinner('Please wait while we cook some recipe recomdations for you ...'):
+                responses = []
+                for recipe_id in seleted_recipie_ids:
+                    response = requests.get('http://144.202.23.218:8060/search/'+str(recipe_id))
+                    responses.extend(response.json())
+                
+                ## Remove duplicate recipes
+                st.session_state.toprecipies = [dict(t) for t in {tuple(d.items()) for d in responses}]
             
             ## Move to recommended recipes page
             st.session_state["page"] = 2
             
             ## Confirm the selection
-            st.button('Confirm', use_container_width=True)
+            st.button('Show Recommended Recipies', use_container_width=True)
+
+
+
+
+            
+
+            
         
