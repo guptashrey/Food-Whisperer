@@ -7,7 +7,7 @@ import glob
 
 # reading the raw interactions data
 print("Reading Data...")
-interactions = pd.read_csv("../data/RAW_interactions.csv")
+interactions = pd.read_csv("../data/raw/RAW_interactions.csv")
 
 # sorting the interactions by user_id and rating
 interactions.sort_values(by=["user_id", "rating"], ascending=False, inplace=True)

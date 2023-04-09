@@ -36,3 +36,28 @@ For this project we used a [recipe dataset](https://www.kaggle.com/datasets/shuy
 - `review`: The text review the user left describing their thoughts about the recipe.
 
 ## Running the Demo
+
+## Project Structure
+The project data and codes are arranged in the following manner:
+
+```
+├── data                                <- directory for project data
+    ├── processed                       <- directory to store processed data
+    ├── raw                             <- directory to store raw data
+├── notebooks                           <- directory to store any exploration/scratch notebooks used
+├── scripts                             <- directory for data processing, inference server and metrics scripts
+    ├── coverage_calculation.py         <- script to calculate the coverage metric
+    ├── data_processing.py              <- script to process the raw data
+    ├── image_scraping.py               <- script to scrape the recipe images from food.com
+    ├── inference_server.py             <- script to run the recommendation pipeline server
+    ├── inference.py                    <- script to run the recommendation pipeline
+├── .gitattributes                      <- git attributes file (for git lfs)
+├── .gitignore                          <- git ignore file
+├── LICENSE                             <- license file
+├── README.md                           <- description of project and how to set up and run it
+├── requirements.txt                    <- requirements file to document dependencies
+```
+&nbsp;
+## Food Whisperer (Streamlit):
+* Refer to the [README.md](https://github.com/guptashrey/Food-Whisperer/blob/st/README.md) at this link to run the Streamlit-based web application or access it [here](https://food-whisperer.streamlit.app/).
+* You can find the code for the Streamlit web-app [here](https://github.com/guptashrey/Food-Whisperer/tree/st)

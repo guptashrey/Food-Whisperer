@@ -233,7 +233,7 @@ def _get_top_recipes(interactions_df, recipes_df, num_recipes=25):
 ##### Main Function #####
 if __name__ == "__main__":
     print("Loading data...")
-    interactions_df, recipes_df = load_raw_data(data_folder_path=os.path.join("..", "data"))
+    interactions_df, recipes_df = load_raw_data(data_folder_path=os.path.join("..", "data", "raw"))
     
     print("Processing recipes...")
     process_recipes(recipes_df, processed_data_folder_path=os.path.join("..", "data", "processed"))
