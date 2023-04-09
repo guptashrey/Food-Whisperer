@@ -45,3 +45,16 @@ def get_top_n_recipe_ids(recipe_id, top_n=5):
     res = fast_cosine_matrix(u, M)
     res = np.argsort(res)[-(top_n+1):][:-1]
     return list(recipes_df_similarity.iloc[res].id)
+
+def get_recommended_recipes(recipe_ids, top_n=5):
+    recommended_recipes = recipes_df_display[:0]
+    
+    for id in recipe_ids:
+        ids = get_top_n_recipe_ids(id, top_n)
+        temp = recipes_df_display[recipes_df_display["id"].isin(ids)]
+        recommended_recipes = pd.concat([recommended_recipes, temp])
+    
+    recommended_recipes = recommended_recipes.drop_duplicates()
+    recommended_recipes = recommended_recipes.reset_index(drop=True)
+    
+    return recommended_recipes
