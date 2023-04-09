@@ -31,3 +31,5 @@ For this project we used a [recipe dataset](https://www.kaggle.com/datasets/shuy
 - `date`: The date the user left the review in YYYY-MM-DD format.
 - `rating`: The rating the user gave the recipe on a 1-5 scale.
 - `review`: The text review the user left describing their thoughts about the recipe.
+
+## Running the Demo
