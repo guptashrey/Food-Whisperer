@@ -27,7 +27,7 @@ def recommended_recipes_UI():
                 if counter > 4:
                     counter = 1
 
-            ## Display the recipe title
+            ## Display the recipe title and url
             with col2:
                 with st.container():
                     col6, col7 = st.columns([2, 1])

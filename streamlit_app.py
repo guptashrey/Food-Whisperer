@@ -23,9 +23,11 @@ def load_data():
         df (pd.DataFrame): The dataframe containing the top 50 popular recipes
     """
 
+    ## Load the top 50 popular recipes
     df = pd.read_csv('data/top_recipes.csv')
     df["selected"]=False
 
+    ## Save the default recommendations
     st.session_state.toprecipies = df.to_dict('records')
 
     return df
@@ -39,7 +41,7 @@ df = load_data()
 ## Landing page UI
 def run_UI():
     """
-    The main UI function to display the Landing page UI
+    The main UI function to display the UI for the webapp
     """
 
     ## Set the page title and navigation bar
@@ -112,7 +114,7 @@ if __name__ == '__main__':
 
         if 'loaded' not in st.session_state:
             if len(url_params.keys()) == 0:
-                ## Set the default page as "Animal Classifier"
+                ## Set the default page as "Recipe Recommender"
                 st.experimental_set_query_params(page='Recipe Recommender')
                 url_params = st.experimental_get_query_params()
                 st.session_state.page = PAGES.index(url_params['page'][0])

@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import streamlit as st
-from streamlit_card import card
 
 ## Initiate logging
 logger = logging.getLogger(__name__)
@@ -73,14 +72,17 @@ def user_profile_UI(df):
         },
     ]
 
-
+    ## Display the recipe cards
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     columns = [col1, col2, col3, col4, col5, col6]
     
     count = 0
+    ## Loop through the recipes and display the recipe cards
     for recipe in recipes:
         with columns[count]:
+            ## Display the recipe image
             st.image(recipe["image"], use_column_width=True)
+            ## Display the recipe title and checkbox
             selected = st.checkbox(recipe["title"])
             count += 1
             if count >= 6:

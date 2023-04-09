@@ -7,10 +7,10 @@ from config import PAGES
 
 def recipe_recommender_UI(df):
     """
-    The main UI function to display the Landing page UI
+    The main UI function to display the recipe recommender page
     """
     st.divider()
-    st.header('Select a few Recipes you love ... ')
+    st.header('Select 5 Recipes you love ... ')
 
     ## Get the top 30 recipes
     recipes = df.to_dict('records')
