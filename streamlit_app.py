@@ -109,7 +109,7 @@ if __name__ == '__main__':
 
         ## Get the page name from the URL
         url_params = st.experimental_get_query_params()
-        if len(url_params.keys()) == 0:
+        if len(url_params.keys()) == 0 or "page" not in st.session_state:
             st.session_state.page = 1
 
         if 'loaded' not in st.session_state:
